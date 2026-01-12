@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainContainer{
+    /* border:1px solid black; */
+    height:100vh;
+    width:300vw;
+    background-color:rgb(209, 206, 206);
+}
+.leftside{
+    background-image: url(images/image1.jpg!w700wp);
+    background-size: cover;
+    width:34%;
+    margin-left: 220px;
+    height:85vh;
+    
+}
+.logocontainer{
+    display:flex;
+    margin-top: 115%;
+}
+.companyname {
+    /* border:1px solid white; */
+    margin-left: 10px;
+   
+}
+.companyname h2{
+    font-size: 18px;
+    font-weight:bold;
+}
+.logo{
+    /* border:1px solid white; */
+    width:26px;
+    height:26px;
+    background-color: #0ac43c;
+    border-radius: 5px;
+    /* margin-top: 30%; */
+}
+.logo i{
+    color:black;
+    margin-top: 6px;
+    margin-left: 4px;
+    
+}
+.leftside .info{
+    margin-top: 10px;
+    font-weight: 600;
+}
+.leftside .kglrights{
+    font-size: 12px;
+}
+.rightside{
+    /* border:1px solid black; */
+    width:34%;
+    height:85vh;
+    background-color: rgb(244, 242, 242);
+}
+.rightside h1{
+    font-size: 21px;
+    font-weight:800;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.rightside p{
+    color:rgb(134, 135, 135);
+    margin-left: 35px;
+    font-size: 14px;
+}
+.rightside .label{
+    font-size: 13px;
+    margin-left: 35px;
+    font-weight: 700;
+}
+.rightside .input{
+    width:80%;
+    margin-left: 35px;
+    background-color: rgb(244, 242, 242);
+}
+.input::placeholder{
+    font-size: 13px;
+    margin-right: px;
+}
+.password{
+    position:relative;
+}
+.password a{
+    margin-left: 110px;
+    color:#10e044;
+    text-decoration: none;
+    font-size: 13px;
+}
+.password i{
+    position:absolute;
+    right: 20px;
+    top:60%;
+    transform: translate(-1350%);
+    font-size: 20px;
+}
+.logged-check .check-label{
+    margin-left: 35px;
+    font-size: 13px;
+}
+.btn1{
+    margin-left: 35px;
+    margin-top: 15px;
+    width:80%;
+    color:black;
+    background-color: #10e044;
+}
+.system-Support{
+     margin-left: 30px;
+     font-size: 13px;
+     margin-top: 10px;
+}
+.trouble{
+    border:1px solid rgb(212, 211, 211);
+    height:15vh;
+    width:18vw;
+    display:flex;
+    margin-left: 35px;
+    border-radius: 5px;
+    background-color: rgb(243, 242, 242);
+}
+.headphone{
+    /* border:1px solid black; */
+    height:4vh;
+    width:3vw;
+    margin-left: 10px;
+    margin-top:12px;
+    border-radius: 11px;
+    background-color: white;
+}
+.headphone i{
+    margin-top: 5px;
+    margin-left: 5px;
+    color:#10e044;
+}
+.supportinfo h6{
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 13px;
+}
+.supportinfo p{
+    margin-left: 15px;
+    font-size: 13px;
+    margin-top: -5px;
+}
+.supportinfo .contact{
+    margin-left: 15px;
+    font-size: 13px;
+    margin-top: -10px;
+}
+.arrow{
+    /* border:1px solid black; */
+    height:20px;
+    width:20px;
+    margin-top: 70px;
+    
+}
+.arrow i{
+    font-size: 15px;
+    margin-left: -100px;
+}
+.procurement-container{
+    border:1px solid black;
+    width:100vw;
+    height:100vh;
+}
+.procurementnav{
+    border:1px solid black;
+    width:100vw;
+    height:9vh;
+    background-color: white;
+    display:flex;
+}
+.procurementForm{
+    border:1px solid black;
+    width:100vw;
+    height:91vh;
+}
+.navlist ul li{
+     list-style:none;
+     display:inline;
+}
+.navlist a{
+    text-decoration: none;
+    color:
+}
