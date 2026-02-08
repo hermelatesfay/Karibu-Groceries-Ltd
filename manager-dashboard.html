@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karibu Login Page</title>
+    <title>Manager Dashboard</title>
     <link
       href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css"
       rel="stylesheet"
@@ -20,24 +20,338 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card shadow-sm">
-            <div class="card-body text-center">
-              <h6>Record Procurement</h6>
-              <a href="#" class="btn btn-success btn-sm">Open</a>
+    <div class="managerContainer">
+      <div class="sidenav">
+        <div class="logo-companyName">
+          <div class="logo-manger">
+            <img class="logo-pic" src="images/img3.jpg" alt="logo" />
+          </div>
+          <div class="dashboard-companyName">
+            <h2>Karibu <br />Groceries</h2>
+          </div>
+        </div>
+
+        <div class="manager-profile">
+          <div class="profile-pic">
+            <img src="images/img4.avif" alt="profile" />
+          </div>
+          <div class="profile-name">
+            <p>
+              <b>Alex M.</b><br />
+              Manager
+            </p>
+          </div>
+        </div>
+
+        <div class="side-links">
+          <div class="heading">
+            <p>OPERATIONS</p>
+          </div>
+          <div class="link-pages">
+            <ul>
+              <a class="nav-links active" href=""
+                ><li><i class="bx bx-dashboard"></i> Dashboard</li></a
+              >
+              <a class="nav-links" href=""
+                ><li>
+                  <i class="bx bx-archive-alt"></i> Record Procurement
+                </li></a
+              >
+              <a class="nav-links" href=""
+                ><li><i class="bx bx-calculator"></i> Record Sales</li></a
+              >
+              <a class="nav-links" href=""
+                ><li>
+                  <i class="bx bx-cupboard-alt"></i> View Stock Levels
+                </li></a
+              >
+              <a class="nav-links" href=""
+                ><li><i class="bx bx-print-dollar"></i> Manage Prices</li></a
+              >
+            </ul>
+          </div>
+          <div class="side-links">
+            <div class="heading1">
+              <p>ANALYTICS</p>
+              <div class="link-pages1">
+                <ul>
+                  <a href=""
+                    ><li>
+                      <i class="bx bx-bar-chart-big"></i> Branch Reports
+                    </li></a
+                  >
+                  <a href=""
+                    ><li><i class="bx bx-cog"></i> System Settings</li></a
+                  >
+                </ul>
+              </div>
             </div>
+          </div>
+
+          <div class="logout-container">
+            <p><i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out</p>
           </div>
         </div>
       </div>
-    </div>
 
+      <div class="content">
+        <div class="top-content">
+          <div class="dashboard-heading">
+            <h2 id="welcome">Dashboard Overview</h2>
+            <p>Here is today's summary for Karibu Groceries</p>
+          </div>
+
+          <div class="notification">
+            <i class="fa-regular fa-bell"></i>
+            <span class="dot"></span>
+            <button class="addTransactionbtn">
+              <span>+</span> New Transaction
+            </button>
+          </div>
+        </div>
+
+        <div class="all-content">
+          <div class="quickInfo">
+            <div class="infoBox">
+              <div class="boxIcon">
+                <img src="images/dollar-circle.svg" alt="dollor-circle" />
+              </div>
+              <div class="quickData">
+                <div class="headingInfo">
+                  <p>Total Stock Value</p>
+                </div>
+                <div class="price">
+                  <h2>UGX 150M</h2>
+                </div>
+              </div>
+            </div>
+            <div class="infoBox">
+              <div class="boxIcon1">
+                <img src="images/currency-notes.svg" alt="currency-notes" />
+              </div>
+              <div class="quickData">
+                <div class="headingInfo">
+                  <p>Today's Sales</p>
+                </div>
+                <div class="price">
+                  <h2>UGX 3.2M</h2>
+                </div>
+              </div>
+            </div>
+            <div class="infoBox">
+              <div class="boxIcon2">
+                <img src="images/clipboard-detail.svg" alt="clipboard-detail" />
+              </div>
+              <div class="quickData">
+                <div class="headingInfo">
+                  <p>Pending Procurement</p>
+                </div>
+                <div class="price">
+                  <h2>12 Orders</h2>
+                </div>
+              </div>
+            </div>
+            <div class="infoBox">
+              <div class="boxIcon3">
+                <img src="images/alert-triangle.svg" alt="alert-triangle" />
+              </div>
+              <div class="quickData">
+                <div class="headingInfo">
+                  <p>Low Stock Alerts</p>
+                </div>
+                <div class="price">
+                  <h2>2 Items</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="records">
+              <div class="stockLevel">
+                  <div class="stockHeading">
+                      <div class="stocklevelheading">
+                          <p>Cereal Stock Levels</p>
+                      </div>
+                      <div class="viewDetails">
+                        <p><a href="">View Detailed Report</a></p>
+                      </div>
+                  </div>
+                  <div class="items">
+                      <div class="item1">
+                          <div class="item-icon">
+                            <img src="images/corn.png" alt="corn">
+                          </div>
+                          <div class="itemName">
+                            <p>Grain Maize</p>
+                          </div>
+                          <div class="capacity">
+                            <p>85% capacity(42.5 Tonnes)</p>
+                          </div>
+                      </div>
+                      <div class="levels">
+                          <div class="indicator one" style="width:85%;"></div>
+                      </div>
+                  </div>
+                  <div class="items">
+                      <div class="item1">
+                          <div class="item-icon1">
+                            <img src="images/red-beans.png" alt="red-beans">
+                          </div>
+                          <div class="itemName">
+                            <p>Red Beans</p>
+                          </div>
+                          <div class="capacity">
+                            <p>45% capacity(12 Tonnes)</p>
+                          </div>
+                      </div>
+                      <div class="levels">
+                          <div class="indicator two" style="width:45%;"></div>
+                      </div>
+                  </div>
+                  <div class="items">
+                      <div class="item1">
+                          <div class="item-icon2">
+                            <img src="images/healthy.png" alt="soybeans">
+                          </div>
+                          <div class="itemName">
+                            <p>Soybeans</p>
+                          </div>
+                          <div class="capacity">
+                            <p>12% capacity(Low stock)</p>
+                          </div>
+                      </div>
+                      <div class="levels">
+                          <div class="indicator three" style="width:12%;"></div>
+                      </div>
+                  </div>
+                  <div class="items">
+                    <div class="item1">
+                          <div class="item-icon3">
+                            <img src="images/food.png" alt="G-nuts">
+                          </div>
+                          <div class="itemName">
+                            <p>G-nuts</p>
+                          </div>
+                          <div class="capacity">
+                            <p>65% capacity(8 Tonnes)</p>
+                          </div>
+                      </div>
+                      <div class="levels">
+                          <div class="indicator four" style="width:65%;"></div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="addRecords">
+                  <div class="addRecordHeading">
+                    <p>Quick Actions</p>
+                  </div>
+                  <div class="recordSales">
+                      <div class="sales-up">
+                        <p>Record Sales</p>
+                      </div>
+                      <div class="sales-down">
+                        <div class="salesInfo">
+                          <p>Process new customer order</p>
+                        </div>
+                        <div class="salesArrow">
+                           <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                       
+                      </div>
+                  </div>
+                  <div class="addProcurement">
+                      <div class="procurement-up">
+                        <p>Add Procurement</p>
+                      </div>
+                      <div class="procurement-down">
+                        <div class="procurementInfo">
+                          <p>Process new customer order</p>
+                        </div>
+                        <div class="procurementArrow">
+                           <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                      </div>
+                      
+                  </div>
+              </div>
+              
+          </div>
+          
+           <div class="tableInfo">
+                  <div class="tableHeading">
+                      <div class="transaction">
+                        <p>Recent Transactions</p>
+                      </div>
+                      <div class="type">
+                        <div class="all">
+                          <p>All</p>
+                        </div>
+                        <div class="sales">
+                          <p>Sales</p>
+                        </div>
+                        <div class="procurement">
+                          <p>Procurement</p>
+                        </div>
+                      </div>
+                     
+                  </div>
+                      <div class="table">
+                        <table>
+                          <tr class="heading-row">
+                            <td>TRANSACTION ID</td>
+                            <td>ITEM</td>
+                            <td>TYPE</td>
+                            <td>DATE</td>
+                            <td>AMOUNT</td>
+                            <td>STATUS</td>
+                          </tr>
+                          <tr>
+                            <td class="id">#TRX-8829</td>
+                            <td class="item">Grain Maize</td>
+                            <td class="sale">Sale</td>
+                            <td class="date">Oct 24, 2025</td>
+                            <td class="amount">UGX 850,000</td>
+                            <td class="completed size"><span>Completed</span></td>
+                          </tr>
+                          <tr>
+                            <td class="id">#TRX-8828</td>
+                            <td class="item">Red Beans</td>
+                            <td class="procurement-color">Procurement</td>
+                            <td class="date">Oct 24, 2025</td>
+                            <td class="amount">UGX 4,200,000</td>
+                            <td class="verified size"><span>Verified</span></td>
+                          </tr>
+                          <tr>
+                            <td class="id">#TRX-8827</td>
+                            <td class="item">Soybeans</td>
+                            <td class="sale">Sale</td>
+                            <td class="date">Oct 23, 2025</td>
+                            <td class="amount">UGX 240,000</td>
+                            <td class="pending size"><span>Pending</span></td>
+                          </tr>
+                          <tr>
+                            <td class="id">#TRX-8826</td>
+                            <td class="item">G-nuts</td>
+                            <td class="procurement-color">Procurement</td>
+                            <td class="date">Oct 23, 2025</td>
+                            <td class="amount">UGX 5,100,000</td>
+                            <td class="completed size"><span>Completed</span></td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="copyRights">
+                        <p>© 2026 Karibu Groceries Limited. All rights reserved</p>
+                      </div>
+            </div> 
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
   </body>
 </html>
