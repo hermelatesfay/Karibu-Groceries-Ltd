@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurement Form</title>
+    <link
+      href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="fa/css/fontawesome.css" rel="stylesheet" />
+    <link href="fa/css/brands.css" rel="stylesheet" />
+    <link href="fa/css/solid.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="procurement-container">
+        <div class="procurementnav">
+            <div class="logoCompanyName">
+                <div class="logo">
+                    <img class="logo-pic" src="images/img3.jpg" alt="logo" />
+                </div>
+                <div class="companyname-procurement">
+                    <h2>Karibu Groceries</h2>
+                </div>
+            </div>
+            <div class="searchbar">
+                <div class="searchinput">
+                    <input type="search" placeholder="Search" >
+                </div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="navlist">
+                <ul id="nav">
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Inventory</a></li>
+                    <li><a href="">Sales</a></li>
+                    <li><a href="procurement-form.html">Procurement</a></li>
+                    <li><a href="">Reports</a></li>
+                </ul>
+            </div>
+            
+            <div class="profile-pic">
+                <img src="images/img4.avif" alt="profile" />
+            </div>
+            
+        </div>
+        <div class="saleForm">
+           
+            <div class="saleHead">
+                <div class="saleHeading">
+                    <h1>New Sales Record</h1>
+                    <p>Enter details for the produce sale below.</p>
+                </div>
+                
+            </div>
+                
+            <div class="form-container">
+                <form action="" id="form">
+                    <div class="saleType">
+                        <div class="saleType-heading">
+                            <h3>Sale Type Selector</h3>
+                        </div>
+                        <div class="saletype-selectors">
+                            <div class="regularSale">
+                                <input type="radio" value="Regular Sale" name="sale-type" id="regularSale" checked>
+                                <label for="regularSale">Regular Sale</label>
+                            </div>
+
+                            <div class="creditSale">
+                                <input type="radio" value="Credit Sale" name="sale-type" id="creditSale">
+                                <label for="creditSale">Credit Sale</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="saleDetailsContainer">
+                        <div class="salehead">
+                            <div class="sale-icon">
+                                <i class="fa-solid fa-box-archive"></i>
+                            </div>
+                            <div class="saleHeading">
+                                <h3>Sale Details</h3>
+                            </div>
+                        
+                        </div>
+
+                        <div class="produce-details">
+                            <div class="produce-name">
+                                <label for="">Produce Name</label><br>
+                                <select name="" id="produceName">
+                                    <option value="">Select Produce</option>
+                                    <option value="Beans">Beans</option>
+                                    <option value="Grain Maize">Grain Maize</option>
+                                    <option value="Cow peas">Cow peas</option>
+                                    <option value="Soybeans">Soybeans</option>
+                                    <option value="G-nuts">G-nuts</option>
+                                </select>
+                            </div>
+                            <div class="produce-Type">
+                                <label for="">Produce Type</label><br>
+                                <select name="" id="produceType">
+                                    <option value="">Select Type</option>
+                                    <option value="Cereal Grain">Cereal Grain</option>
+                                    <option value="Grain Legume">Grain Legume</option>
+                                    <option value="Oilseed Legume">Oilseed Legume</option>
+                                </select>
+                            </div>
+                            <div class="tonnage">
+                                <label for="">Tonnage (kg)</label><br>
+                                <input id="tonnage" type="number" placeholder="e.g. 5000">
+                                <div class="units">KG</div>
+                            </div>
+                        </div>
+
+                        <div class="supplier-detail">
+                            <div class="dealer-details">
+                                <div class="dealer-Name">
+                                    <label for="">Buyer Name</label>
+                                    <input id="dealer-Name" type="text" placeholder="Enter dealer name">
+                                </div>
+                                <div class="salesDate">
+                                    <label for="">Date & Time</label>
+                                    <input id="salesDate" type="datetime-local" placeholder="mm/dd/yyyy --:-- --">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="paymentDetailsContainer" id="regularFields">
+                        <div class="paymenthead">
+                            <div class="payment-icon">
+                                <i class="fa-solid fa-money-bill"></i>
+                            </div>
+                            <div class="paymentHeading">
+                                <h3>Payment Details</h3>
+                            </div>
+                        
+                        </div>
+
+                        <div class="paymentField">
+                            <div class="amountPaid">
+                                <label for="">Amount Paid (UGX)</label><br>
+                                <input type="text" placeholder="e.g 500,000">
+                            </div>
+
+                            <div class="paymentMethod">
+                                <label for="">Payment Method</label><br>
+                                <select name="" id="">
+                                    <option value="">Select Payment Method</option>
+                                    <option value="">Cash</option>
+                                    <option value="">Mobile Money</option>
+                                    <option value="">Bank Transfer</option>
+                                    <option value="">Cheque </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="creditDetailsContainer" id="creditFields">
+                        <div class="creditthead">
+                            <div class="credit-icon">
+                                <i class="fa-regular fa-credit-card"></i>
+                            </div>
+                            <div class="creditHeading">
+                                <h3>Credit Details</h3>
+                            </div>
+                        
+                        </div>
+
+                        <div class="creditFields">
+                            <div class="creditField1">
+                                <div class="amountDue">
+                                    <label for="">Amount Due (UGX)</label><br>
+                                    <input type="text" placeholder="0.00">
+                                </div>
+                                <div class="buyerNin">
+                                    <label for="">Buyer NIN</label><br>
+                                    <input type="text" placeholder="CM0000000000">
+                                </div>
+                                <div class="buyerLocation">
+                                    <label for="">Buyer Location</label><br>
+                                    <input type="text" placeholder="City, District">
+                                </div>
+                            </div>
+
+                            <div class="creditField2">
+                                <div class="buyerContact">
+                                    <label for="">Buyer Contact</label><br>
+                                    <input type="tel" placeholder="+256">
+                                </div>
+                                <div class="dispatchDate">
+                                    <label for="">Dispatch Date</label><br>
+                                    <input type="date" placeholder="mm/dd/yyyy">
+                                </div>
+                                <div class="dueDate">
+                                    <label for="">Due Date</label><br>
+                                    <input type="date" placeholder="mm/dd/yyyy">
+                                </div>
+                            </div>
+                        </div>
+
+                      
+                    </div>
+
+
+                    <div class="submitSalesButton">
+                        <div class="salescancel">
+                            <a href=""><p>Cancel</p></a>
+                        </div>
+                        <div class="salessubmit">
+                            <button type="submit">Save Sale Record</button>
+                            <i class="fa-regular fa-floppy-disk"></i>
+                        </div>
+                    </div>
+                        
+                    
+                    
+            
+                </form>
+
+                <div class="needHelp">
+                    <div class="helpHeading">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p>Need Help?</p>
+                    </div>
+                    <div class="helpInfo">
+                        <p>Ensure all mandatory fields marked with weights and amounts are accurate before saving. Credit sales require buyer NIN for compliance.</p>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="rights">
+                <p>© 2026 Karibu Groceries Limited.</p>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

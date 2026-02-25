@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price Management</title>
+    <link
+      href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="fa/css/fontawesome.css" rel="stylesheet" />
+    <link href="fa/css/brands.css" rel="stylesheet" />
+    <link href="fa/css/solid.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="managerContainer">
+      <div class="sidenav">
+        <div class="logo-companyName">
+          <div class="logo-manger">
+            <img class="logo-pic" src="images/img3.jpg" alt="logo" />
+          </div>
+          <div class="dashboard-companyName">
+            <h2>Karibu Groceries</h2>
+          </div>
+        </div>
+
+        <div class="manager-profile">
+          <div class="profile-pic">
+            <img src="images/img4.avif" alt="profile" />
+          </div>
+          <div class="profile-name">
+            <p>
+              <b>Alex M.</b><br />
+              Manager
+            </p>
+          </div>
+        </div>
+
+        <div class="side-links">
+          <div class="heading">
+            <p>OPERATIONS</p>
+          </div>
+          <div class="link-pages">
+            <ul id="side-nav">
+              <a class="nav-links" href="manager-dashboard.html"
+                ><li><i class="bx bx-dashboard"></i> Dashboard</li></a
+              >
+              <a class="nav-links" href="procurement-form.html"
+                ><li>
+                  <i class="bx bx-archive-alt"></i> Record Procurement
+                </li></a
+              >
+              <a class="nav-links" href="managerSale.html"
+                ><li><i class="bx bx-calculator"></i> Record Sales</li></a
+              >
+              <a class="nav-links" href=""
+                ><li>
+                  <i class="bx bx-cupboard-alt"></i> View Stock Levels
+                </li></a
+              >
+              <a class="nav-links" href="priceManage.html"
+                ><li><i class="bx bx-print-dollar"></i> Manage Prices</li></a
+              >
+            </ul>
+          </div>
+          <div class="side-links">
+            <div class="heading1">
+              <p>ANALYTICS</p>
+              <div class="link-pages1">
+                <ul>
+                  <a href=""
+                    ><li>
+                      <i class="bx bx-bar-chart-big"></i> Branch Reports
+                    </li></a
+                  >
+                  <a href=""
+                    ><li><i class="bx bx-cog"></i> System Settings</li></a
+                  >
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="logout-container">
+            <p><i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="top-content-price">
+          <div class="dashboard-heading">
+            <h2 >Price Management</h2>
+            
+          </div>
+
+          <div class="notificationPrice">
+            <i class="fa-regular fa-bell"></i>
+            <span class="dot"></span>
+            <div class="update">
+              <p>Last updated: 15 Feb 2026, 10:24AM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="all-content-price">
+            <div class="summaryBox">
+                <div class="priceCardInfo">
+                      <div class="icon">
+                        <div class="priceboxIcon1">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                      </div>
+                    <div class="totals">
+                        <p>Total Products</p>
+                        <h3>5 Items</h3>
+                    </div>
+                </div>
+                <div class="priceCardInfo">
+                    <div class="icon">
+                        <div class="priceboxIcon2">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                      </div>
+                    <div class="totals">
+                        <p>Average Margin</p>
+                        <h3>18.5%</h3>
+                    </div>
+                </div>
+                <div class="priceCardInfo">
+                    <div class="icon">
+                        <div class="priceboxIcon3">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                        </div>
+                      </div>
+                    <div class="totals">
+                        <p>Pending Updates</p>
+                        <h3>2 Products</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricetableInfo">
+                  <div class="tableHeading">
+                      <div class="productssearchbar">
+                        <div class="productssearchinput">
+                          <input type="search" placeholder="Search products (beans, maize...)" >
+                      </div>
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                      <div class="buttons">
+                        <div class="filter">
+                          <button>Filter</button>
+                          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAApUlEQVR4AcSRQQ6DIBBFv130DD1OexMTWdieokdw0dguxsSblIP0EF260xmICRAnEl1I8oDJnxcgnLBjHCw/yvJyN8bmIv3yWnftMzAUgM1F+sHDyU3f/1uiZy7Szy6cLJstRHJdVQ2/e9SQPDwkkrl4jcBNQ3JVbrvu9yGyGpKr8hzUxlxT5ixc+SZh6ff8Zd8Un8TzovwmKlJizVeLso/W513yBAAA//87qyVxAAAABklEQVQDAOAIiR8JR1UZAAAAAElFTkSuQmCC" alt="">
+                        </div>
+                        <div class="export">
+                            <button>Export</button>
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+                        
+                      </div>
+                     
+                  </div>
+                      <div class="table">
+                        <table>
+                          <tr class="heading-row">
+                            <td>PRODUCT NAME</td>
+                            <td>COST PRICE</td>
+                            <td>CURRENT PRICE</td>
+                            <td>PROFIT MARGIN</td>
+                            <td>LAST UPDATE</td>
+                            <td>ACTION</td>
+                          </tr>
+                          <tr>
+                            <td class="">Yellow Beans(1000kg)</td>
+                            <td class="costPrice">UGX 3,500,000</td>
+                            <td class="currentPrice">UGX 4000000</td>
+                            <td class="margin"><span>20.0%</span></td>
+                            <td class="update">2 hours ago</td>
+                            <td class="edit"><span><i class="fa-solid fa-pen"></i> Edit</span></td>
+                          </tr>
+                          <tr>
+                            <td class="">Yellow Beans(1000kg)</td>
+                            <td class="costPrice">UGX 3,500,000</td>
+                            <td class="currentPrice">UGX 4000000</td>
+                            <td class="margin"><span>20.0%</span></td>
+                            <td class="update">2 hours ago</td>
+                            <td class="edit"><span><i class="fa-solid fa-pen"></i> Edit</span></td>
+                          </tr>
+                          <tr>
+                           <td class="">Yellow Beans(1000kg)</td>
+                            <td class="costPrice">UGX 3,500,000</td>
+                            <td class="currentPrice">UGX 4000000</td>
+                            <td class="margin"><span>20.0%</span></td>
+                            <td class="update">2 hours ago</td>
+                            <td class="edit"><span><i class="fa-solid fa-pen"></i> Edit</span></td>
+                          <tr>
+                            <td class="">Yellow Beans(1000kg)</td>
+                            <td class="costPrice">UGX 3,500,000</td>
+                            <td class="currentPrice">UGX 4000000</td>
+                            <td class="margin"><span>20.0%</span></td>
+                            <td class="update">2 hours ago</td>
+                            <td class="edit"><span><i class="fa-solid fa-pen"></i> Edit</span></td>
+                          </tr>
+                        </table>
+                        <div class="pages">
+                          <div class="pageInfo">
+                            <p>Showing 1-2 of 8 products</p>
+                          </div>
+                          <div class="prenextpage">
+                            <div class="previousIcon">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </div>
+                            <div class="firstPage">1</div>
+                            <div class="secondPage">2</div>
+                            <div class="nextPage">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

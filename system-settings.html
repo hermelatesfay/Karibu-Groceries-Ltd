@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurement Form</title>
+    <link
+      href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="fa/css/fontawesome.css" rel="stylesheet" />
+    <link href="fa/css/brands.css" rel="stylesheet" />
+    <link href="fa/css/solid.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="procurement-container">
+        <div class="procurementnav">
+            <div class="logoCompanyName">
+                <div class="logo">
+                    <img class="logo-pic" src="images/img3.jpg" alt="logo" />
+                </div>
+                <div class="companyname-procurement">
+                    <h2>Karibu Groceries</h2>
+                </div>
+            </div>
+            <div class="searchbar">
+                <div class="searchinput">
+                    <input type="search" placeholder="Search" >
+                </div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="navlist">
+                <ul id="nav">
+                    <li><a href="manager-dashboard.html">Dashboard</a></li>
+                    <li><a href="">Inventory</a></li>
+                    <li><a href="managerSale.html">Sales</a></li>
+                    <li><a href="procurement-form.html">Procurement</a></li>
+                    <li><a href="">Reports</a></li>
+                </ul>
+            </div>
+            
+            <div class="profile-pic">
+                <img src="images/img4.avif" alt="profile" />
+            </div>
+            
+        </div>
+        <div class="systemSettings">
+            
+            <div class="settingHead">
+                <div class="settingHeading">
+                    <h1>System Settings</h1>
+                    
+                </div>
+                 <div class="saveBtns">
+                    <button class="discard">Discard</button>
+                    <button class="saveAll">Save All Changes</button>
+                    <i class="fa-regular fa-floppy-disk"></i>
+                  </div>
+            </div>
+                
+             <div class="branchInfo">
+                      <div class="branchHeading">
+                          <div class="branchIcon">
+                            <i class="fa-solid fa-location-dot"></i>
+                          </div>
+                          <div div class="branchText">
+                              <p>Branch Information</p>
+                          </div>
+                      </div>
+                      <div class="branchFields">
+                          <div class="branchFieldsRow1">
+                              <div class="branchName">
+                                  <label for="">Branch Name</label><br>
+                                  <input type="text" id="branchName">
+                              </div>
+                              <div class="branchLoaction">
+                                  <label for="">Branch Location</label><br>
+                                  <input type="text" id="branchLocation">
+                              </div>
+                          </div>
+                        
+                          <div class="branchFieldsRow2">
+                              <div class="contactNumber">
+                                  <label for="">Contact Number</label><br>
+                                  <input type="tel" id="contactNumber">
+                              </div>
+                              <div class="emailAddress">
+                                  <label for="">Email Address</label><br>
+                                  <input type="text" id="branchLocation">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <div class="userManagement">
+                      <div class="userHeading">
+                          <div class="userIcon">
+                            <i class="fa-solid fa-users"></i>
+                          </div>
+                          <div div class="userText">
+                              <p>User Management</p>
+                          </div>
+
+                          <div class="addUser">
+                                <button class="addUserBtn">Add New User</button>
+                                <i class="fa-solid fa-user-plus"></i>
+                          </div>
+                      </div>
+                        <div class="userTable">
+                            <table>
+                                <tr class="tableHead">
+                                    <th>USERNAME</th>
+                                    <th>ROLE</th>
+                                    <th>STATUS</th>
+                                    <th>ACTIONS</th>
+                                </tr>
+                                <tr>
+                                    <td>Alice Mutua</td>
+                                    <td class="roles"><span>Manager</span></td>
+                                    <td class="active">Active</td>
+                                    <td class="actions"><i class="fa-regular fa-pen-to-square"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Alice Mutua</td>
+                                    <td class="roles"><span>Manager</span></td>
+                                    <td class="active">Active</td>
+                                    <td class="actions"><i class="fa-regular fa-pen-to-square"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Alice Mutua</td>
+                                    <td class="roles"><span>Manager</span></td>
+                                    <td class="active">Active</td>
+                                    <td class="actions"><i class="fa-regular fa-pen-to-square"></i></td>
+                                </tr>
+                            </table>
+                        </div>
+                     
+                  </div>
+
+
+                  
+                  <div class="userNotification">
+                      <div class="notificationHeading">
+                          <div class="notificationIcon">
+                            <i class="fa-regular fa-bell"></i>
+                          </div>
+                          <div div class="notificationText">
+                              <p>Notification Settings</p>
+                          </div> 
+                      </div>
+
+                      <div class="stockAlerts">
+                           <div class="alertInfo">
+                                <h3>Low Stock Alerts</h3>
+                                <p>Get notified instantly when essential grocery items fall below the <br> minimum threhold</p>
+                           </div>
+                           <div class="notificationSwitch">
+                                <i class="fa-solid fa-toggle-off"></i>
+                           </div>
+                      </div>
+
+                      <div class="stockAlerts">
+                           <div class="alertInfo">
+                                <h3>Email Notifications</h3>
+                                <p>Receive daily summary reports and argent alerts via your registered <br> branch email</p>
+                           </div>
+                           <div class="notificationSwitch">
+                                <i class="fa-solid fa-toggle-off"></i>
+                           </div>
+                      </div>
+                        
+                     
+                  </div>
+
+                  <div class="helpInfo">
+                        <div class="helpHeading">
+                            <div class="helpIcon">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </div>
+                            <div div class="helpText">
+                                <p>Need help with these settings?</p>
+                            </div>
+                        </div>
+                        <div class="detailedInfo">
+                            <p>Review our Configuration Guide or contact the IT support team for assistance with advanced branch permissions.</p>
+                        </div>
+                  </div>
+            
+          </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -294,30 +294,1849 @@
 
         /* procurement form styles */
 .procurement-container{
-    border:1px solid black;
+    /* border:1px solid black; */
     width:100%;
     height:100vh;
 }
 .procurementnav{
-    border:1px solid black;
+    /* border:1px solid black; */
     width:100%;
     height:9vh;
     background-color: white;
     display:flex;
 }
 .procurementForm{
-    border:1px solid black;
+    border:1px solid rgb(243, 243, 243);
     width:100%;
-    height:91vh;
+    height:130vh;
+    background-color: rgb(243, 243, 243);
+}
+.navlist{
+    /* border:1px solid black; */
+    height:4vh;
+    width:30%;
+    margin-left: 14%;
+    margin-top: 20px;
+
+    
 }
 .navlist ul li{
      list-style:none;
      display:inline;
+     
 }
 .navlist a{
     text-decoration: none;
-    /* color: */
+    margin-left: 10px;
+    margin-right: 3%;
+    font-size: 16px;
+    color:rgb(69, 69, 69);
+    font-weight: 600;
 }
+.navlist a.active{
+    color:#0ed03e
+}
+.navlist a:hover{
+    color:#10d642;
+}
+.logoCompanyName{
+    /* border:1px solid black; */
+    height:8vh;
+    width:20%;
+    display:flex;
+    margin-left: 8%;
+
+}
+.logo{
+    /* border:1px solid rgb(194, 193, 193); */
+    width:50px;
+    height:50px;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-top: 34px;
+}
+.logo img{
+     border:1px solid rgb(230, 230, 230);
+    width: 48px;
+    height:48px;
+    border-radius: 5px;
+ 
+}
+.companyname-procurement{
+    /* border:1px solid black; */
+    height:5vh;
+    width:50%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.companyname-procurement h2{
+    font-size: 19.8px;
+    margin-top: 14px;
+    font-weight: 700;
+}
+.searchbar{
+    /* border:1px solid black; */
+    height:5vh;
+    width:15%;
+    margin-top: 15px;
+    margin-left: -30px;
+}
+.searchinput input{
+   border:1px solid rgb(243, 243, 243);
+    height:5vh;
+    width:100%;
+    padding-left: 17%;
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+    border:none;
+    position:relative;
+    outline: 1px solid rgb(243, 243, 243);
+}
+input::placeholder{
+    font-size: 15px;
+}
+.searchbar i{
+    position:absolute;
+    top:28px;
+    right:72%;
+    color:grey;
+}
+.profile-pic{
+   /* border:1px solid black; */
+   height:40px;
+   width:40px;
+   border-radius: 20px;
+   margin-top: 10px;
+   margin-left: 27px;
+}
+.profile-pic img{
+    border:1px solid rgb(178, 231, 186);
+     height:43px;
+   width:43px;
+    border-radius: 20px;
+}
+.procurementForm .contentlinks{
+    /* border:1px solid black; */
+    height:5vh;
+    width:20%;
+    margin-left: 20%;
+    margin-top: 40px;
+}
+.contentlinks p a{
+    text-decoration: none;
+    font-size: 18px;
+    color:rgb(94, 96, 94);
+}
+.contentlinks p a.active{
+    color:black;
+    font-weight: bold;
+}
+.procurementHead{
+    /* border:1px solid black; */
+    width:60%;
+    height:10vh;
+    display:flex;
+    margin-left: 20%;
+    margin-top: 1.5%;
+}
+.procurementHeading h1{
+    font-size: 30px;
+    font-weight:800;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.procurementHeading p{
+    font-size: 18px;
+    margin-top: 7px;
+    color:rgb(98, 96, 96);
+}
+.procurementHead .import{
+    margin-left: 30%;
+    margin-top: 3%;
+}
+.import button{
+    padding:8px 17px;
+    color:#0ed03e;
+    background-color: #d8eede;
+    font-size: 17px;
+    border-radius: 10px;
+    border:none;
+    font-weight: 500;
+}
+button i{
+    margin-left: -5px;
+    font-size: 17px;
+    color:#0ed03e;
+}
+.import button:hover{
+    background-color:#c2e9cc ;
+}
+.form-container{
+    border:1px solid rgb(233, 233, 233);
+    height:94vh;
+    width:60%;
+    margin-left: 20%;
+    margin-top: 2%;
+    border-radius: 10px;
+    background-color: white;
+}
+.produceContainer{
+    border:1px solid rgb(243, 243, 243);
+    height:23vh;
+    width:100%;
+}
+.producehead{
+    /* border:1px solid black; */
+    height:5vh;
+    width:20%;
+    display:flex;
+    margin-top: 27px;
+    margin-left: 27px;
+}
+.produce-icon i{
+    color:#0ed03e;
+    font-size: 18px;
+}
+.produceHeading h3{
+    margin-left: 13px;
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -3px;
+}
+.produce-details{
+    display:flex;
+    /* justify-content:space-around; */
+}
+.produce-name label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+}
+.produce-name select{
+    border:1px solid rgb(225, 223, 223);
+    height:6.5vh;
+    width:17vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px;
+    
+}
+.produce-name select:valid{
+    padding-left: 4%;
+    font-size: 15px;
+    color:grey;
+}
+.produce-name select:focus{
+    outline:2px solid rgb(12, 225, 12);
+}
+.produce-Type label{
+     font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+}
+.produce-Type select{
+    border:1px solid rgb(225, 223, 223);
+    height:6.5vh;
+    width:17vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px;
+}
+.produce-Type select:valid{
+    padding-left: 4%;
+    font-size: 15px;
+    color:grey;
+}
+.produce-Type select:focus{
+    outline:2px solid rgb(12, 225, 12);
+}
+.tonnage label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+}
+.tonnage input{
+   border:1px solid rgb(225, 223, 223);
+    height:6.5vh;
+    width:17vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px; 
+    position:relative;
+    
+}
+.tonnage input:valid{
+    padding-left: 4%;
+    font-size: 15px;
+    color:grey;
+}
+.tonnage input:focus{
+    outline:2px solid rgb(12, 225, 12);
+}
+.tonnage .unit{
+    /* border:1px solid black; */
+    width:3%;
+    height:6.2vh;
+    position:absolute;
+    top:49.5%;
+    right:22.3%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 14px;
+    padding-left: 10px;
+    color:rgb(73, 72, 72);
+    background-color: rgb(243, 243, 243);
+    font-size: 16px;
+}
+.financeContainer{
+    border:1px solid rgb(243, 243, 243);
+    height:23vh;
+    width:100%;
+}
+.financehead{
+      /* border:1px solid black; */
+    height:5vh;
+    width:20%;
+    display:flex;
+    margin-top: 27px;
+    margin-left: 27px;
+}
+.finance-icon i{
+    color:#0ed03e;
+    font-size: 18px;
+}
+.finance-Heading h3{
+    margin-left: 13px;
+    margin-top: -3px;
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.finance-details{
+    display:flex;
+}
+.totalcost label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+}
+.totalcost input{
+    border:1px solid rgb(225, 223, 223);
+    height:6.5vh;
+    width:26.5vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px;
+    padding-left: 43px;
+    position:relative;
+}
+
+.totalcost input:focus{
+    outline:2px solid rgb(12, 225, 12);
+}
+.totalcost p{
+    position:absolute;
+    right:75.2%;
+    top:74.1%;
+    font-size: 15px;
+    color:black;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.salePrice label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+}
+.salePrice input{
+    border:1px solid rgb(225, 223, 223);
+    height:6.5vh;
+    width:26.5vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px;
+    padding-left: 43px;
+    position:relative;
+}
+.salePrice input:focus{
+    outline:2px solid rgb(12, 225, 12);
+}
+.salePrice p{
+    position:absolute;
+    right:46.5%;
+    top:74.1%;
+    font-size: 15px;
+    color:black;
+    font-weight:700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.supplierContainer{
+    border:1px solid rgb(243, 243, 243);
+    height:37vh;
+    width:100%;
+}
+.supplierhead{
+      /* border:1px solid black; */
+    height:5vh;
+    width:25%;
+    display:flex;
+    margin-top: 27px;
+    margin-left: 27px;
+}
+.supplier-icon{
+    color:#0ed03e;
+    font-size: 18px;
+}
+.supplier-Heading h3{
+    margin-left: 13px;
+    margin-top: -3px;
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dealer-details1{
+    display:flex;
+    margin-top: 5px;
+}
+.dealer-details2{
+    display:flex;
+    margin-top: 23px;
+}
+.dealerName label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+}
+.dealerName input{
+    border:1px solid rgb(225, 223, 223);
+    height:6.5vh;
+    width:26.5vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px;
+}
+.dealerName input:valid{
+    padding-left: 4%;
+    font-size: 15px;
+    color:grey;
+}
+.dealerName input:focus{
+    outline:2px solid rgb(12, 225, 12);
+}
+.contactInfo label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+}
+.contactInfo input{
+    border:1px solid rgb(225, 223, 223);
+    height:6.5vh;
+    width:26.5vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px; 
+    padding-left: 37px;
+   
+}
+
+.contactInfo input:focus{
+    outline:2px solid rgb(12, 225, 12);
+}
+.contactInfo i{
+    position:absolute;
+    right:47%;
+    top:98%;
+    font-size: 18px;
+    color:rgb(158, 157, 157);
+}
+
+.branch label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    
+}
+.branch select{
+    border:1px solid rgb(225, 223, 223);
+    height:6.5vh;
+    width:26.5vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px; 
+}
+.branch select:valid{
+    padding-left: 4%;
+    font-size: 15px;
+    color:grey;
+
+}
+.branch select:focus{
+    outline:2px solid rgb(12, 225, 12);
+}
+.date-time label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    
+}
+.date-time input{
+    border:1px solid rgb(225, 223, 223);
+    height:6.5vh;
+    width:26.5vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px; 
+}
+.date-time input:valid{
+    padding-left: 4%;
+    font-size: 15px;
+    color:grey;
+}
+.date-time input:focus{
+    outline:2px solid rgb(12, 225, 12);
+}
+.submitButton{
+    border:1px solid rgb(225, 223, 223);
+    height:11vh;
+    width:100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    display:flex;
+}
+.cancel{
+    /* border:1px solid black; */
+    height:5vh;
+    width:9%;
+    margin-left: 60%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.cancel a{
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+   
+}
+.cancel a p{
+    padding-top: 6px;
+    padding-left: 13px;
+}
+.cancel a p:hover{
+    /* border:1px solid black; */
+    height:5vh;
+    border-radius: 10px;
+    background-color: rgb(229, 229, 229);
+ }
+.submit{
+     /* border:1px solid black; */
+    height:5vh;
+    width:30%;
+    margin-left: 3%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.submit button{
+    padding: 12px 35px;
+    padding-left: 35px;
+    position:relative;
+    background-color: #17dd49;
+    font-size: 16px;
+    color:white;
+    border-radius: 10px;
+    border:none;
+}
+.submit i{
+    position:absolute;
+    top:124.5%;
+    right:35.2%;
+    font-size: 18px;
+    color:white;
+}
+
+ 
+/* manager sales record */
+
+.saleForm{
+    border:1px solid rgb(243, 243, 243);
+    width:100%;
+    height:150vh;
+    background-color: rgb(243, 243, 243);
+}
+.saleHead{
+    /* border:1px solid black; */
+    width:60%;
+    height:10vh;
+    display:flex;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+.saleHeading h1{
+    font-size: 30px;
+    font-weight:800;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.saleHeading p{
+    font-size: 18px;
+    margin-top: 7px;
+    color:rgb(98, 96, 96);
+}
+.form-container{
+    border:1px solid rgb(233, 233, 233);
+    height:94vh;
+    width:60%;
+    margin-left: 20%;
+    margin-top: 2%;
+    border-radius: 10px;
+    background-color: white;
+}
+.saleType{
+    border:1px solid rgb(243, 243, 243);
+    height:18vh;
+    width:100%;
+    background-color: #fafbfe;
+}
+.saleType-heading{
+    /* border:1px solid black; */
+    height:3vh;
+    width:20%;
+    margin-top: 3vh;
+    margin-left: 2%;
+}
+.saleType-heading h3{
+    margin-left: 13px;
+    font-size: 14px;
+    color:rgb(84, 84, 84);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.saletype-selectors{
+    display:flex;
+    border:1px solid black;
+    height:6.5vh;
+    width:45%;
+    border-radius: 10px;
+    background-color: #e3e7f0;
+    border:none;
+    margin-top: 1.5%;
+    margin-left: 2%;
+    padding-top: 15px;
+    padding-left: 4px;
+}
+.regularSale input[type="radio"]{
+    display:none;
+   
+}
+.creditSale input[type="radio"]{
+    display:none;
+}
+.regularSale label{
+    padding:10px 58px;
+    border: 2px solid #2e7d32;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    color: rgb(65, 65, 73);
+    transition: all 0.3s ease;
+    border:none;
+}
+.creditSale label{
+    padding:10px 60px;
+    border: 2px solid #2e7d32;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    color: rgb(65, 65, 73);
+    transition: all 0.3s ease;
+    border:none;
+}
+.regularSale input[type="radio"]:checked + label{
+    background-color: white;
+    color:#0ed03e;
+}
+.creditSale input[type="radio"]:checked + label{
+    background-color: white;
+    color:#0ed03e;
+}
+.saleDetailsContainer{
+    border:1px solid rgb(243, 243, 243);
+    height:38vh;
+    width:100%;
+}
+.salehead{
+    /* border:1px solid black; */
+    height:5vh;
+    width:20%;
+    display:flex;
+    margin-top: 35px;
+    margin-left: 27px;
+}
+.sale-icon i{
+    color:#0ed03e;
+    font-size: 18px;
+}
+.saleHeading h3{
+    margin-left: 13px;
+    font-size: 19px;
+}
+.tonnage .units{
+    /* border:1px solid black; */
+    width:3%;
+    height:6.2vh;
+    position:absolute;
+    top:59.0%;
+    right:22.3%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 11px;
+    padding-left: 12px;
+    color:rgb(73, 72, 72);
+    background-color: rgb(243, 243, 243);
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.supplier-detail{
+    margin-top: 25px;
+}
+.dealer-details{
+    display:flex;
+    margin-top: 5px;
+}
+
+.dealer-Name label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+}
+.dealer-Name input{
+    border:1px solid rgb(225, 223, 223);
+    height:6.5vh;
+    width:26.5vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px;
+}
+.dealer-Name input:valid{
+    padding-left: 4%;
+    font-size: 15px;
+    color:grey;
+}
+.dealer-Name input:focus{
+    outline:2px solid rgb(12, 225, 12);
+}
+.salesDate label{
+    font-size: 14.8px;
+    margin-left: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+}
+.salesDate input{
+    border:1px solid rgb(225, 223, 223);
+    height:6.5vh;
+    width:26.5vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: -15px; 
+    padding-left: 4%;
+   
+}
+.salesDate input:valid{
+    font-size: 17px;
+    color:grey;
+}
+.salesDate input:focus{
+    outline:2px solid rgb(12, 225, 12);
+}
+.paymentDetailsContainer{
+    border:1px solid rgb(243, 243, 243);
+    height:40vh;
+    width:100%;
+}
+.paymenthead{
+    /* border:1px solid black; */
+    height:5vh;
+    width:20%;
+    display:flex;
+    margin-top: 35px;
+    margin-left: 27px;
+}
+.payment-icon i{
+    color:#0ed03e;
+    font-size: 18px;
+}
+.paymentHeading h3{
+    margin-left: 13px;
+    font-size: 19px;
+}
+.paymentField{
+    border:1px solid #bbfbd4;
+    height:15vh;
+    width:93%;
+    border-radius: 10px;
+    background-color: #f3fbf6;
+    margin-left: 3.5%;
+}
+.paymentField{
+    display:flex;
+    
+}
+.amountPaid{
+    margin-top: 13px;
+}
+.amountPaid label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    
+}
+.amountPaid input{
+    border:1px solid rgb(225, 223, 223);
+    height:6.5vh;
+    width:24.4vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px;
+    padding-left: 4%;
+}
+.amountPaid input:focus{
+    outline:2px solid rgb(12, 225, 12);
+}
+.paymentMethod{
+    margin-top: 13px;
+}
+.paymentMethod label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    padding-top: 15px;
+}
+.paymentMethod select{
+    border:1px solid rgb(225, 223, 223);
+    height:6.5vh;
+    width:24.4vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px;
+    padding-left: 4%;
+}
+.paymentMethod  select:valid{
+    padding-left: 4%;
+    font-size: 15px;
+    color:grey;
+
+}
+.paymentMethod  select:focus{
+    outline:2px solid rgb(12, 225, 12);
+}
+.creditDetailsContainer{
+    border:1px solid rgb(243, 243, 243);
+    height:40vh;
+    width:100%;
+    display:none;
+}
+.creditthead{
+    /* border:1px solid black; */
+    height:5vh;
+    width:20%;
+    display:flex;
+    margin-top: 35px;
+    margin-left: 27px;
+}
+.credit-icon i{
+    color:#f7af2a;
+    font-size: 18px;
+}
+.creditHeading h3{
+    margin-left: 13px;
+    font-size: 19px;
+}
+.creditFields{
+    border:1px solid rgb(247, 204, 126);
+    height:25vh;
+    width:93%;
+    border-radius: 10px;
+    background-color: rgb(250, 244, 232);
+    margin-left: 3.5%;
+}
+.creditField1{
+    display:flex;
+}
+.creditField2{
+    display:flex;
+}
+
+.amountDue{
+    margin-top: 13px;
+}
+.amountDue label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    padding-top: 15px;
+}
+.amountDue input{
+    border:1px solid rgb(247, 204, 126);
+    height:6.5vh;
+    width:15.6vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px;
+    padding-left: 4%;
+}
+.amountDue input:focus{
+    outline:2px solid rgb(252, 184, 58);
+}
+.buyerNin{
+    margin-top: 13px;
+}
+.buyerNin label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    padding-top: 15px;
+}
+.buyerNin input{
+    border:1px solid rgb(247, 204, 126);
+    height:6.5vh;
+    width:15.6vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px;
+    padding-left: 4%;
+}
+.buyerNin input:focus{
+    outline:2px solid rgb(252, 184, 58);
+}
+.buyerLocation{
+    margin-top: 13px;
+}
+.buyerLocation label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    padding-top: 15px;
+}
+.buyerLocation input{
+    border:1px solid rgb(247, 204, 126);
+    height:6.5vh;
+    width:15.6vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px;
+    padding-left: 4%;
+}
+.buyerLocation input:focus{
+    outline:2px solid rgb(252, 184, 58);
+}
+
+
+.buyerContact{
+    margin-top: 13px;
+}
+.buyerContact label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    padding-top: 15px;
+}
+.buyerContact input{
+    border:1px solid rgb(247, 204, 126);
+    height:6.5vh;
+    width:15.6vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px;
+    padding-left: 4%;
+}
+.buyerContact input:focus{
+    outline:2px solid rgb(252, 184, 58);
+}
+.dispatchDate{
+    margin-top: 13px;
+}
+.dispatchDate label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    padding-top: 15px;
+}
+.dispatchDate input{
+    border:1px solid rgb(247, 204, 126);
+    height:6.5vh;
+    width:15.6vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px;
+    padding-left: 4%;
+}
+.dispatchDate input:focus{
+    outline:2px solid rgb(252, 184, 58);
+}
+.dispatchDate input:valid{
+    font-size: 17px;
+    color:grey;
+}
+.dueDate{
+    margin-top: 13px;
+}
+.dueDate label{
+    font-size: 14.8px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    padding-top: 15px;
+}
+.dueDate input{
+    border:1px solid rgb(247, 204, 126);
+    height:6.5vh;
+    width:15.6vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 31px;
+    padding-left: 4%;
+}
+.dueDate input:valid{
+    font-size: 17px;
+    color:grey;
+}
+.dueDate input:focus{
+    outline:2px solid rgb(252, 184, 58);
+}
+
+.submitSalesButton{
+    border:1px solid rgb(225, 223, 223);
+    height:11vh;
+    width:100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    display:flex;
+    margin-top: -18px;
+}
+.salescancel{
+    /* border:1px solid black; */
+    height:5vh;
+    width:9%;
+    margin-left: 60%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.salescancel a{
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+   
+}
+.salescancel a p{
+    padding-top: 6px;
+    padding-left: 13px;
+}
+.salescancel a p:hover{
+    /* border:1px solid black; */
+    height:5vh;
+    border-radius: 10px;
+    background-color: rgb(229, 229, 229);
+ }
+.salessubmit{
+     /* border:1px solid black; */
+    height:5vh;
+    width:30%;
+    margin-left: 3%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.salessubmit button{
+    padding: 12px 35px;
+    padding-left: 35px;
+    position:relative;
+    background-color: #17dd49;
+    font-size: 16px;
+    color:white;
+    border-radius: 10px;
+    border:none;
+}
+.salessubmit button:hover{
+    background-color: #0ac839;
+}
+.salessubmit i{
+    position:absolute;
+    top:125.5%;
+    right:35.2%;
+    font-size: 18px;
+    color:white;
+}
+.needHelp{
+    border:1px solid rgb(190, 211, 245);
+    height:10vh;
+    border-radius: 10px;
+    background-color: rgb(233, 239, 252);
+    margin-top: 3%;
+}
+.helpHeading{
+    display:flex;
+    margin-top: 16px;
+    margin-left: 15px;
+}
+.helpHeading i{
+    color:rgb(124, 173, 252);
+    font-size: 20px;
+}
+.helpHeading p{
+    margin-left: 18px;
+    color:#0d2b6e;
+}
+.helpInfo p{
+    margin-left: 55px;
+    font-size: 15px;
+    color:rgb(52, 125, 241);
+}
+.rights{
+    /* border:1px solid black; */
+    width:100%;
+    height:10vh;
+    margin-top: 14.2%;
+    background-color: white;
+}
+.rights p{
+    text-align: center;
+    padding-top: 2%;
+    color:grey;
+}
+
+
+    /* price management page */
+.all-content-price{
+    /* border:1px solid black; */
+    width:100%;
+    height:156vh;
+    background-color: rgb(246, 246, 246);
+    margin-top: 96px;
+    
+}
+.top-content-price{
+    position:fixed;
+    right:0;
+    top:0;
+    left:17%;
+    z-index: 200;
+    transition:left 300ms;
+    /* border:1px solid rgb(245, 245, 245); */
+    width:100%;
+    height:12vh;
+    background-color:rgb(255, 255, 255) ;
+    display:flex;
+}
+.top-content-price h2{
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.notificationPrice{
+    /* border:1px solid black; */
+   margin-left: 45.5%;
+   display:flex;
+   position:relative;
+}
+.notificationPrice i{
+    font-size: 18px;
+    margin-top: 40px;
+    color:rgb(175, 174, 174);
+}
+.notificationPrice .dot{
+    position:absolute;
+    background-color:red;
+    border:1px solid black;
+    border-radius: 50%;
+    right:90%;
+    width:6.5px;
+    height:6.5px;
+    top:34px;
+    border:none;
+}
+.update{
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.update p{
+    color:rgb(68, 67, 67);
+}
+.summaryBox{
+    display:flex;
+    gap:2px;
+}
+.priceCardInfo{
+    border:1px solid rgb(223, 222, 222);
+    width:30.3%;
+    height:15vh;
+    margin-top: 30px;
+    margin-left:28px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+}
+.icon .priceboxIcon1{
+    border:1px solid black;
+    height:7.5vh;
+    width:90%;
+    border-radius: 5px;
+    background-color: #e8faec;
+    border:none;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.priceboxIcon1 i{
+    margin-left: 14px;
+    margin-top: 15px;
+    color:#0ac839;
+    font-size: 21px;
+}
+.totals{
+    margin-left: 30px;
+}
+.totals p{
+    margin-top: 25px;
+    font-size: 15px;
+    color:rgb(143, 142, 142);
+    font-weight: 600;
+}
+.totals h3{
+    margin-top: -15px;
+}
+
+.icon .priceboxIcon2{
+    border:1px solid black;
+    height:7.5vh;
+    width:90%;
+    border-radius: 5px;
+    background-color: rgb(227, 234, 248);
+    border:none;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.priceboxIcon2 i{
+    margin-left: 14px;
+    margin-top: 15px;
+    color:rgb(52, 125, 241);
+    font-size: 21px;
+}
+.totals{
+    margin-left: 30px;
+}
+.totals p{
+    margin-top: 25px;
+    font-size: 15px;
+    color:rgb(143, 142, 142);
+    font-weight: 600;
+}
+.totals h3{
+    margin-top: -15px;
+    font-size: 25px;
+}
+.icon .priceboxIcon3{
+    border:1px solid black;
+    height:7.5vh;
+    width:90%;
+    border-radius: 5px;
+    background-color: rgb(244, 235, 221);
+    border:none;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.priceboxIcon3 i{
+    margin-left: 14px;
+    margin-top: 15px;
+    color:rgb(239, 182, 89);
+    font-size: 21px;
+}
+.pricetableInfo{
+    border:1px solid rgb(235, 234, 234);
+    height:40vh;
+    width:95%;
+    margin-left: 32px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 30px;
+}
+.productssearchbar{
+    /* border:1px solid black; */
+    height:5vh;
+    width:30%;
+    margin-top: 18px;
+    margin-left: 25px;
+}
+.productssearchinput input{
+   border:1px solid rgb(243, 243, 243);
+    height:5vh;
+    width:100%;
+    padding-left: 10%;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border:none;
+    position:relative;
+    outline: 1px solid rgb(227, 226, 226);
+}
+input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+}
+.productssearchbar i{
+    position:absolute;
+    top:294px;
+    right:77.5%;
+    color:rgb(171, 170, 170);
+}
+.buttons{
+    display:flex;
+    margin-left: 50%;
+    margin-top: 15px;
+}
+.filter{
+    position:relative;
+}
+.filter button{
+    padding:6px 15px;
+    padding-left: 30px;
+    border-radius: 10px;
+    border-color: rgb(238, 238, 238);
+    background-color: white;
+    font-size: 14px;
+}
+.filter img{
+    position:absolute;
+    right:70%;
+    top:22%;
+}
+
+.export{
+    position:relative;
+    margin-left: 15px;
+}
+.export button{
+    padding:6px 15px;
+    padding-left: 30px;
+    border-radius: 10px;
+    border-color: rgb(238, 238, 238);
+    background-color: white;
+    font-size: 14px;
+}
+.export i{
+    position:absolute;
+    right:70%;
+    top:22%;
+    color:rgb(139, 139, 139);
+}
+.filter button:hover{
+    background-color: rgb(244, 244, 244);
+}
+.export button:hover{
+    background-color: rgb(244, 244, 244);
+}
+.margin span{
+    border:1px solid black;
+    height:15px;
+    width:50px;
+    background-color: rgb(223, 242, 221);
+    border-radius: 10px;
+    padding:2px 7px;
+    border:none;
+    color:#11c73f;
+    font-weight: 500;
+}
+.currentPrice{
+    font-weight: 600;
+}
+.update{
+    color:grey;
+}
+.costPrice{
+   color:grey; 
+}
+.edit span{
+    border:1px solid rgb(215, 215, 215);
+    width:10%;
+    height:5vh;
+    padding:3px 7px;
+    border-radius:5px;
+}
+.edit i{
+    font-size: 10px;
+    margin-left: -5px;
+}
+.edit span{
+    font-size: 13px;
+}
+.edit span:hover{
+    color:#0ed03e;
+    outline: 1px solid #0ed03e;
+}
+.pages{
+    border:1px solid rgb(236, 236, 236);
+    height:11vh;
+    display:flex;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.pageInfo{
+    margin-left: 15px;
+    margin-top: 17px;
+}
+.prenextpage{
+    display:flex;
+    margin-left: 65%;
+    margin-top: 15px;
+}
+.previousIcon i{
+    border:1px solid rgb(236, 236, 236);
+    padding:8px 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color:grey;
+}
+.nextPage i{
+    border:1px solid rgb(236, 236, 236);
+    padding:8px 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color:grey;
+}
+.firstPage{
+    border:1px solid rgb(236, 236, 236);
+    height:4vh;
+    width:2vw;
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: -12px;
+}
+
+.secondPage{
+    border:1px solid rgb(236, 236, 236);
+    height:4vh;
+    width:2vw;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+
+    /* system settings page */
+.settingHead{
+    /* border:1px solid black; */
+    width:80%;
+    height:10vh;
+    display:flex;
+    margin-left: 12%;
+    margin-top: 2%;
+}
+.settingHeading h1{
+    font-size: 30px;
+    font-weight:800;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}  
+.saveBtns{
+    /* border:1px solid black; */
+    margin-left: 55%;
+    margin-top: 20px;
+    display:flex;
+}
+.discard{
+    padding:3px 10px;
+    border:1px solid rgb(235, 234, 234);
+    background-color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    
+}
+.discard:hover{
+    background-color: rgb(246, 246, 246);
+}
+.saveAll{
+    border:1px solid rgb(235, 234, 234);
+    padding:3px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: #0ed03e;
+    color:white;
+    font-size: 14px;
+    padding-left: 35px;
+    position:relative;
+    margin-left: 15px;
+}
+.saveAll:hover{
+    background-color: #10ee47;
+}
+.saveBtns i{
+    position:absolute;
+    top:57%;
+    right:33.2%;
+    font-size: 13px;
+    color:white;
+}
+.branchInfo{
+    border:1px solid rgb(234, 234, 234);
+    width:60%;
+    height:35vh;
+    margin-top: 70px;
+    margin-left: 20.3%;
+    border-radius: 10px;
+    background-color: white;
+}
+.branchHeading{
+    border:1px solid rgb(245, 245, 245);
+    height:8vh;
+    display:flex;
+}
+.branchIcon i{
+    text-shadow: -1px -1px 0 #0ed03e,  
+         1px -1px 0 #0ed03e,
+        -1px  1px 0 #0ed03e,
+         1px  1px 0 #0ed03e;
+    color:white;
+    padding-top: 22px;
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: 800;
+}
+.branchText p{
+    padding-top: 19px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+.branchFields{
+    border:1px solid rgb(241, 241, 241);
+    height:77%;
+}
+.branchFieldsRow1{
+    display:flex;
+}
+.branchFieldsRow2{
+    display:flex;
+}
+.branchName{
+    margin-top: 15px;
+}
+.branchName label{
+    font-size: 14.6px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    padding-top: 15px;
+}
+.branchName input{
+    border:1px solid rgb(220, 219, 219);
+    height:5.5vh;
+    width:26.9vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 27px;
+    padding-left: 4%;
+}
+.branchLoaction{
+    margin-top: 15px;
+}
+.branchLoaction label{
+    font-size: 14.6px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    padding-top: 15px;
+}
+.branchLoaction input{
+    border:1px solid rgb(220, 219, 219);
+    height:5.5vh;
+    width:26.9vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 27px;
+    padding-left: 4%;
+}
+.contactNumber{
+    margin-top: 15px;
+}
+.contactNumber label{
+    font-size: 14.6px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    padding-top: 15px;
+}
+.contactNumber input{
+    border:1px solid rgb(220, 219, 219);
+    height:5.5vh;
+    width:26.9vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 27px;
+    padding-left: 4%;
+}
+.emailAddress{
+    margin-top: 15px;
+}
+.emailAddress label{
+    font-size: 14.6px;
+    margin-left: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color:rgb(66, 66, 66);
+    padding-top: 15px;
+}
+.emailAddress input{
+    border:1px solid rgb(220, 219, 219);
+    height:5.5vh;
+    width:26.9vw;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 27px;
+    padding-left: 4%;
+}
+.userManagement{
+    border:1px solid rgb(234, 234, 234);
+    width:60%;
+    height:39vh;
+    margin-top: 40px;
+    margin-left: 20.3%;
+    border-radius: 10px;
+    background-color: white;
+}
+.userHeading{
+    border:1px solid rgb(245, 245, 245);
+    height:9vh;
+    display:flex;
+}
+.userIcon i{
+    text-shadow: -1px -1px 0 #0ed03e,  
+         1px -1px 0 #0ed03e,
+        -1px  1px 0 #0ed03e,
+         1px  1px 0 #0ed03e;
+    color:white;
+    padding-top: 22px;
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: 800;
+}
+.userText p{
+    padding-top: 18px;
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.addUser{
+    margin-left: 52%;
+    margin-top: 15px;
+} 
+.addUserBtn{
+    padding:7px 25px;
+    padding-left: 40px;
+    background-color: #e6f8ea;
+    border-radius: 5px;
+    border:none;
+    color:#0ed03e;
+    font-weight: 600;
+    position:relative;
+}
+.addUserBtn i{
+    position:absolute;
+    top:35%;
+    right:70%;
+    font-size: 15px;
+}
+.addUser i{
+    position:absolute;
+    top:76.8%;
+    right:30.4%;
+    font-size: 11px;
+    color:white;
+    text-shadow: -1px -1px 0 #0dc93c,  
+         1px -1px 0 #0dc93c,
+        -1px  1px 0 #0dc93c,
+         1px  1px 0 #0dc93c;
+}
+.userTable table{
+    /* border:1px solid black; */
+    width:100%;
+    border-collapse: collapse;
+}
+.userTable table .tableHead{
+    height:6vh;
+}
+.userTable table th{
+    /* border:1px solid black; */
+    background-color: rgb(250, 250, 250);
+    font-size: 13px;
+    color:rgb(95, 94, 94);
+    font-weight: 700;
+}
+.userTable table td{
+    width:8%;
+    color:black;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.roles span{
+    border:1px solid black;
+    height:15px;
+    width:50px;
+    background-color: rgb(233, 241, 255);
+    border-radius: 5px;
+    padding:2px 7px;
+    border:none;
+    color:rgb(52, 125, 241);
+    font-weight: 500;
+    font-size: 13px;
+}
+.userTable table .active{
+    color:#0ed03e;
+    font-size: 14px;
+    
+}
+.userTable table .actions{
+    color:grey;
+}
+.userTable table .actions:hover{
+      color:white;
+    text-shadow: -1px -1px 0 #0dc93c,  
+         1px -1px 0 #0dc93c,
+        -1px  1px 0 #0dc93c,
+         1px  1px 0 #0dc93c;
+    cursor: pointer;
+}
+.systemSettings{
+    border:1px solid rgb(243, 243, 243);
+    width:100%;
+    height:190vh;
+    background-color: rgb(243, 243, 243);
+}
+.userNotification{
+    border:1px solid rgb(234, 234, 234);
+    width:60%;
+    height:39vh;
+    margin-top: 40px;
+    margin-left: 20.3%;
+    border-radius: 10px;
+    background-color: white;
+}
+.notificationHeading{
+    border:1px solid rgb(245, 245, 245);
+    height:9vh;
+    display:flex;
+}
+.notificationIcon i{
+    text-shadow: -1px -1px 0 #0dcd3d,  
+         1px -1px 0 #0dcd3d,
+        -1px  1px 0 #0dcd3d,
+         1px  1px 0 #0dcd3d;
+    color:white;
+    padding-top: 22px;
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: 800;
+}
+.notificationText p{
+    padding-top: 19px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.stockAlerts{
+    border:1px solid rgb(234, 234, 234);
+    height:15vh;
+    display:flex;
+}
+.alertInfo{
+    /* border:1px solid black; */
+    width:50%;
+    height:10vh;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.alertInfo h3{
+    color:rgb(34, 34, 34);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+.alertInfo p{
+    color:rgb(108, 108, 108);
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}  
+.notificationSwitch{
+    /* border:1px solid black; */
+    width:7%;
+    height:5vh;
+    margin-top: 5%;
+    margin-left: 39%;
+}
+.notificationSwitch i{
+    font-size: 38px;
+    color:rgb(200, 199, 199);
+}
+.helpInfo{
+    border:1px solid #b9ffca;
+    width:60%;
+    height:13vh;
+    margin-left: 20.3%;
+    border-radius: 10px;
+    background-color: #eafcef;
+    margin-top: 40px;
+}
+.helpHeading{
+    display:flex;
+}
+.helpIcon i{
+    color:#11f149;
+    font-size: 28px;
+}
+.helpText{
+    margin-left: -45px;
+}
+.helpText p{
+    color:black;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
 
 
 
@@ -446,8 +2265,8 @@
 }
 .link-pages a{
     text-decoration: none;
-    
 }
+
 .link-pages a i{
     font-size: 20px;
     margin-left: -8px;  
@@ -509,12 +2328,24 @@
     font-size: 14px;
     font-weight: 500;
 }
-.link-pages .nav-links .active{
+/* .link-pages .nav-links{
     border:1px solid black;
     width:150%;
     height:6vh;
     border-radius: 5px;
     background-color: #76f997;
+} */
+
+.nav-links a li.activenow{
+    /* border:1px solid black; */
+    width:97%;
+    height:6vh;
+    border-radius: 5px;
+    border:none;
+    background-color: #6af18c;
+    color:#0ed03e;
+    border-right: 2px solid #61f486;
+   
 }
 .logout-container{
     border:1px solid rgb(233, 231, 231);
