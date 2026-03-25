@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manager Dashboard - Karibu Groceries</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/managePrices.css">
+
+    <link rel="stylesheet" href="../css/sidebar.css">
+
+</head>
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<div id="sidebar-container"></div>
+
+<!-- MAIN -->
+    <div class="main">
+
+<div class="header">
+<h2>Price Management</h2>
+<div class="header-right">
+<span class="material-symbols-outlined">notifications</span>
+<span>Last updated: <b>15 Oct 2023, 10:24 AM</b></span>
+</div>
+</div>
+
+<div class="content">
+
+<!-- STATS -->
+
+<div class="stats">
+
+<div class="card">
+<div class="icon-box green">
+<span class="material-symbols-outlined">inventory</span>
+</div>
+<div>
+<p>Total Products</p>
+<h3>124 Items</h3>
+</div>
+</div>
+
+<div class="card">
+<div class="icon-box blue">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div>
+<p>Average Margin</p>
+<h3>18.5%</h3>
+</div>
+</div>
+
+<div class="card">
+<div class="icon-box orange">
+<span class="material-symbols-outlined">update</span>
+</div>
+<div>
+<p>Pending Updates</p>
+<h3>12 Products</h3>
+</div>
+</div>
+
+</div>
+
+<!-- TABLE -->
+
+<div class="table-card">
+
+<div class="table-header">
+
+<div class="search">
+<input type="text" placeholder="Search products (beans, maize, sorghum...)">
+</div>
+
+<div class="buttons">
+<button class="btn">Filter</button>
+<button class="btn">Export</button>
+</div>
+
+</div>
+
+<table>
+
+<thead>
+<tr>
+<th>Product Name</th>
+<th>Cost Price</th>
+<th>Current Price</th>
+<th>Profit Margin</th>
+<th>Last Updated</th>
+<th style="text-align:right;">Action</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>
+<b>Yellow Beans (90kg Bag)</b><br>
+<small>SKU: BEAN-001-YL</small>
+</td>
+<td class="price">KES 8,500.00</td>
+<td class="price">KES 10,200.00</td>
+<td><span class="margin margin-green">20.0%</span></td>
+<td>2 hours ago</td>
+<td style="text-align:right;"><button class="edit-btn">Edit</button></td>
+</tr>
+
+<tr>
+<td>
+<b>White Maize (90kg Bag)</b><br>
+<small>SKU: MZ-042-WH</small>
+</td>
+<td class="price">KES 3,200.00</td>
+<td class="price">KES 3,850.00</td>
+<td><span class="margin margin-green">20.3%</span></td>
+<td>Updating now...</td>
+<td style="text-align:right;"><button class="edit-btn">Edit</button></td>
+</tr>
+
+<tr>
+<td>
+<b>Green Grams (Pishori)</b><br>
+<small>SKU: GRM-009-PS</small>
+</td>
+<td class="price">KES 12,000.00</td>
+<td class="price">KES 13,800.00</td>
+<td><span class="margin margin-yellow">15.0%</span></td>
+<td>1 day ago</td>
+<td style="text-align:right;"><button class="edit-btn">Edit</button></td>
+</tr>
+
+<tr>
+<td>
+<b>Sorghum Red</b><br>
+<small>SKU: SGM-RD-88</small>
+</td>
+<td class="price">KES 4,500.00</td>
+<td class="price">KES 5,400.00</td>
+<td><span class="margin margin-green">20.0%</span></td>
+<td>3 days ago</td>
+<td style="text-align:right;"><button class="edit-btn">Edit</button></td>
+</tr>
+
+</tbody>
+</table>
+
+<div class="footer">
+<p>Showing 1-10 of 124 products</p>
+<div>Page 1</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+    
+    <script src="../js/auth.js"></script>
+
+    <script src="../js/sidebar.js"></script>
+
+    <script type="module" src="../js/pricrManagement.js"></script>
+
+    
+</body>
+</html>

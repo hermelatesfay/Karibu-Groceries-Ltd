@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manager Dashboard - Karibu Groceries</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/managerDashboard.css">
+
+  <link rel="stylesheet" href="../css/sidebar.css">
+
+</head>
+<body data-role="Manager">
+
+<div class="wrapper">
+
+<!-- SIDEBAR -->
+<div id="sidebar-container"></div>
+
+<!-- MAIN -->
+<div class="main">
+
+<div class="header">
+<div>
+<h2>Dashboard Overview</h2>
+<p>Here is today's summary for Karibu Groceries.</p>
+</div>
+<div class="header-actions">
+<div class="notification">
+<span class="material-symbols-outlined">notifications</span>
+<div class="notification-dropdown" id="notificationDropdown"></div>
+<div class="notification-dot"></div>
+</div>
+
+</div>
+</div>
+
+<div class="content">
+
+<!-- KPI -->
+<div class="kpi-grid">
+<div class="kpi-card">
+<div class="kpi-top">
+<div class="icon-box icon-blue"><span class="material-symbols-outlined">monetization_on</span></div>
+<div class="badge badge-green">+5.2% <span class="material-symbols-outlined" style="font-size:14px;">trending_up</span></div>
+</div>
+<div class="kpi-title">Total Stock Value</div>
+<div class="kpi-value" id="totalStock">0</div>
+</div>
+
+<div class="kpi-card">
+<div class="kpi-top">
+<div class="icon-box icon-green"><span class="material-symbols-outlined">payments</span></div>
+<div class="badge badge-green">+12% <span class="material-symbols-outlined" style="font-size:14px;">trending_up</span></div>
+</div>
+<div class="kpi-title">Total Sales</div>
+<div class="kpi-value" id="totalSales">0</div>
+</div>
+
+<div class="kpi-card">
+<div class="kpi-top">
+<div class="icon-box icon-orange"><span class="material-symbols-outlined">pending_actions</span></div>
+<div class="badge badge-gray">0%</div>
+</div>
+<div class="kpi-title">Total Procurements</div>
+<div class="kpi-value" id="totalProcurement">0</div>
+</div>
+
+<div class="kpi-card">
+<div class="kpi-top">
+<div class="icon-box icon-red"><span class="material-symbols-outlined">warning</span></div>
+<div class="badge badge-red">+1 Alert</div>
+</div>
+<div class="kpi-title">Low Stock Alerts</div>
+<div class="kpi-value" id="lowStockCount">0</div>
+</div>
+</div>
+
+<!-- GRID BELOW -->
+<div class="grid-main">
+
+<!-- STOCK LEVELS -->
+<div class="section">
+<div class="section-header">
+<strong>Cereal Stock Levels</strong>
+<span style="color:#11d432;font-size:14px;"><a href="stockLevel.html">View detailed report</a></span>
+</div>
+<div class="section-body">
+
+<div id="stockContainer"></div>
+
+</div>
+</div>
+
+<!-- QUICK ACTIONS -->
+<div>
+<div class="quick-title">Quick Actions</div>
+
+<div class="quick-card">
+<div class="quick-img" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBLJ1VYJKJOTA37z0Kr_JNyHh6wB87d7I34uu34mhlhQfaps-KLzGDu5dzo-sJG239bYUeCL8c1sYvZZBYOItahGCMhBEoghU0N-d2qBVWifbcuvwMq6J__rxcqp0jXeNp8eJlFUlpTgr87d2NrBIA02hSO00npJnW5CiZLm6koCA3eTy52ZaFtXzd-OIrhwc_ZFM3hFKka-Fg16CYLpTaEQfnuwSg9hAcRc50CaSjIHN4LVkbtRWY4QS9wRTRmD-bJyivj-Hvzl2Y');">
+<div class="quick-overlay">Record Sales</div>
+</div>
+<div class="quick-body"><a href="managerSale.html"><span>Process new customer order</span><span>→</span></a></div>
+</div>
+
+<div class="quick-card">
+<div class="quick-img" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpazthyF_R-NxWQGsMYeXZ17b74pT0cMe4XJm2nJo29VQ4AIoRh4KkZBUVFtv1cVGmj231HAXwEcssClCoSVEuRClrzOty9VAqogOgfX5IKr4JQ073nM_yc0kU0zow7gMw27WJZ69-70YOxEFbmmnlq1KClDY5-3IvWkepRmntmaDK8qnKIZOxeYOSMNOYyU9Zu01qNIzg9Z2ngQ1yF02r3WqGU-hrT8qgDuKACmlzCi7i2rVAz4orPYQJRf3e3D70btuftXV6JSA');">
+<div class="quick-overlay">Add Procurement</div>
+</div>
+<div class="quick-body"><a href="procurement-form.html"><span>Record incoming stock</span><span>→</span></a></div>
+</div>
+
+</div>
+</div>
+
+<!-- TABLE -->
+<div class="table-box">
+<table>
+<thead>
+<tr>
+<th>Transaction ID</th>
+<th>Item</th>
+<th>Type</th>
+<th>Date</th>
+<th>Amount</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody id="transactionTable">
+
+</tbody>
+</table>
+
+<div class="pagination">
+  <button id="prevBtn" class="page-btn">
+    <span class="material-symbols-outlined">chevron_left</span>
+    Previous
+  </button>
+
+  <div id="pageNumbers" class="pages"></div>
+
+  <button id="nextBtn" class="page-btn">
+    Next
+    <span class="material-symbols-outlined">chevron_right</span>
+  </button>
+</div>
+</div>
+
+
+<footer>
+© 2026 Karibu Groceries Limited. All rights reserved. 
+</footer>
+
+</div>
+</div>
+</div>
+
+<!-- <div id="pageLoader" class="page-loader">
+  <div class="spinner"></div>
+</div> -->
+
+
+<script src="../js/auth.js"></script>
+
+<script src="../js/sidebar.js"></script>
+
+<script type="module" src="../js/managerDashboard.js"></script>
+
+
+
+</body>
+</html>

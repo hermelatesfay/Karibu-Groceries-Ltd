@@ -1,0 +1,143 @@
+:root {
+  --primary:#11d432;
+  --muted: #64748b;
+  --success: #11d432;
+  --warning: #facc15;
+  --danger: #ef4444;
+  --bg-card: #fff;
+  --shadow: rgba(0,0,0,0.1);
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  margin:0;
+  background:#f1f5f9;
+  color:#333;
+}
+
+.layout{
+  display:flex;
+  min-height:100vh;
+}
+
+/* Sidebar */
+.sidebar{
+  width:250px;
+  background:#fff;
+  box-shadow:2px 0 8px var(--shadow);
+  display:flex;
+  flex-direction:column;
+  padding:20px;
+}
+.sidebar .logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:40px;
+}
+.sidebar .logo img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+.sidebar .nav a{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 10px;
+  text-decoration:none;
+  color:#333;
+  margin-bottom:10px;
+  border-radius:8px;
+}
+.sidebar .nav a.active{
+  background:rgba(17,212,50,.15);
+  color:#11d432;
+}
+.sidebar .nav a:hover{
+  background:rgba(17,212,50,.1);
+  color:black;
+}
+.sidebar .profile{
+  margin-top:auto;
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.profile img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+/* Main */
+.main{
+  flex:1;
+  padding:20px;
+}
+
+/* Header */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+.header h2{
+  margin:0;
+}
+
+/* Cards Grid */
+.report-cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-bottom:30px;
+}
+.report-card{
+  background:var(--bg-card);
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 2px 8px var(--shadow);
+}
+.report-card h3{
+  margin:0 0 10px 0;
+  font-weight:500;
+}
+.report-card p{
+  font-size:20px;
+  font-weight:bold;
+  color:var(--primary);
+}
+
+/* Table */
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 2px 8px var(--shadow);
+}
+table th, table td{
+  padding:12px;
+  border-bottom:1px solid #eee;
+  text-align:left;
+}
+table th{
+  background:#f9fafb;
+}
+.status{
+  padding:4px 8px;
+  border-radius:6px;
+  color:#fff;
+  font-size:12px;
+}
+.status.green{background:var(--success);}
+.status.amber{background:var(--warning);}
+.status.red{background:var(--danger);}
+
+/* Section Titles */
+h3.section-title{
+  margin-top:40px;
+  margin-bottom:10px;
+}

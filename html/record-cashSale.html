@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Record Sale - Karibu Groceries</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/record-cashSale.css">
+
+<link rel="stylesheet" href="../css/toast.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-box">
+      <span class="material-symbols-outlined"><img src="../images/img3.jpg" alt="logo"></span>
+    </div>
+    Karibu Groceries
+  </div>
+
+  <nav>
+    <a href="salesAgent-dashboard.html">Dashboard</a>
+    <a href="record-cashSale.html" class="active"> Cash Sales</a>
+    <a href="record-creditSale.html">Credit Sale</a>
+    <a href="transactionHistory.html">Transaction History</a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="icon-btn">
+      <span class="material-symbols-outlined">notifications</span>
+    </div>
+    <div class="icon-btn">
+      <span class="material-symbols-outlined">account_circle</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="container">
+
+<div class="page-header">
+  <h1>Record New Sale</h1>
+  <p>Log a wholesale transaction into the management system.</p>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h2>
+      <span class="material-symbols-outlined">receipt_long</span>
+      Sale Information
+    </h2>
+
+    <form id="cashSaleForm" class="form-grid">
+
+      <div class="form-group">
+        <label>Produce Name</label>
+        <div class="field">
+          <span class="material-symbols-outlined left-icon">inventory_2</span>
+          <select id="product">
+            <option>Select produce</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Produce Type</label>
+        <div class="field">
+          <span class="material-symbols-outlined left-icon">category</span>
+          <select name="" id="produceTypeInput">
+            <option value="">Select Produce Type</option>
+            <option value="Legumes">Legumes</option>
+            <option value="Cereals">Cereals</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Tonnage</label>
+        <div class="field">
+          <span class="material-symbols-outlined left-icon">scale</span>
+          <input id="tonnageInput" type="number" placeholder="0.00">
+          <span class="right-text">KG</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Amount Paid</label>
+        <div class="field">
+          <span class="material-symbols-outlined left-icon">payments</span>
+          <input id="amountPaidInput" type="text" placeholder="Total value">
+          <span class="right-text">UGX</span>
+        </div>
+      </div>
+
+      <div class="form-group full">
+        <label>Buyer Name</label>
+        <div class="field">
+          <span class="material-symbols-outlined left-icon">person</span>
+          <input id="buyerInput" type="text" placeholder="Enter buyer name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Sales Agent</label>
+        <div class="field" >
+          <input type="text"id="salesAgentName">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Date & Time</label>
+        <div class="field">
+          <span class="material-symbols-outlined left-icon">event</span>
+          <input id="dateTimeInput" type="datetime-local" value="">
+        </div>
+      </div>
+
+      <div class="form-group full">
+        <label>Branch</label>
+        <div class="field">
+          <input id="branchInput" type="text" placeholder="Branch name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Payment Method</label>
+        <div class="field">
+          <select id="paymentMethodSelect">
+            <option>Select payment method</option>
+            <option value="Cash">Cash</option>
+            <option value="Mobile Money">Mobile Money</option>
+            <option value="Bank Transfer">Bank Transfer</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card-footer full">
+        <button type="reset" class="btn btn-cancel">Cancel</button>
+        <button type="submit" class="btn btn-primary">Record Sale</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+<div class="info-box">
+<span class="material-symbols-outlined">info</span>
+<div>
+<strong>Wholesale pricing tip</strong>
+<p style="margin-top:6px;color:#64748b;font-size:13px;">
+Current market rate for Grade A Maize is UGX 1,200/kg.
+Ensure the amount paid aligns with company policy.
+</p>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+© 2026 Karibu Groceries Limited. Wholesale Management System.
+</footer>
+
+
+<script src="../js/auth.js"></script>
+<script type="module" src="../js/recordCashSale.js"></script>
+</body>
+</html>

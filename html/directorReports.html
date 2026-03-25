@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Director Reports - Karibu Groceries</title>
+
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/directorReports.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="../images/img3.jpg" alt="logo">
+      <strong>Karibu Groceries</strong>
+    </div>
+
+    <div class="nav">
+      <a href="director-dashboard.html">
+        <span class="material-symbols-outlined">dashboard</span>
+        Dashboard
+      </a>
+      <a href="finacial.html">
+        <span class="material-symbols-outlined">account_balance</span>
+        Financials
+      </a>
+      <a href="branchPerformance.html">
+        <span class="material-symbols-outlined">storefront</span>
+        Branches
+      </a>
+      <a href="directorReports.html" class="active">
+        <span class="material-symbols-outlined">description</span>
+        Reports
+      </a>
+    </div>
+
+    <div class="profile">
+      <img src="../images/img4.avif" alt="Director">
+      <div>
+        <strong>John Doe</strong><br>
+        <small style="color:var(--muted)">Managing Director</small>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="header">
+      <h2>Executive Reports</h2>
+      <button class="btn"><span class="material-symbols-outlined">download</span>Export All</button>
+    </div>
+
+    <!-- KPI Cards -->
+    <div class="report-cards">
+      <div class="report-card">
+        <h3>Total Revenue</h3>
+        <p id="reportRevenue">UGX 0</p>
+      </div>
+      <div class="report-card">
+        <h3>Procurement Cost</h3>
+        <p id="reportCost">UGX 0</p>
+      </div>
+      <div class="report-card">
+        <h3>Estimated Profit</h3>
+        <p id="reportProfit">UGX 0</p>
+      </div>
+      <div class="report-card">
+        <h3>Outstanding Credit</h3>
+        <p id="reportCredit">UGX 0</p>
+      </div>
+      <div class="report-card">
+        <h3>Total Produce Sold</h3>
+        <p id="reportSales">0 Tons</p>
+      </div>
+    </div>
+
+    <!-- Branch Stock Table -->
+    <h3 class="section-title">Branch Stock Distribution</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Branch</th>
+          <th>Remaining Stock</th>
+        </tr>
+      </thead>
+      <tbody id="branchStockTable"></tbody>
+    </table>
+
+  </main>
+
+</div>
+
+<!-- Scripts -->
+<script src="../js/directorsReports.js"></script>
+<script src="../js/auth.js"></script>
+
+</body>
+</html>

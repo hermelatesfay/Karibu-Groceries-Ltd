@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Record Credit Sale - Karibu Groceries Limited</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/record-creditSale.css">
+
+<link rel="stylesheet" href="../css/toast.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- Sidebar -->
+<div class="sidebar">
+<div class="brand">
+<div class="logo"><img src="../images/img3.jpg" alt="logo"></div>
+<div>
+<h1>Karibu Groceries</h1>
+<p>Sales Agent Portal</p>
+</div>
+</div>
+
+<div class="nav-item "><span class="material-symbols-outlined">dashboard</span><a  href="salesAgent-dashboard.html">Dashboard</a></div>
+
+<div class="nav-section">Sales Operations</div>
+<div class="nav-item"><span class="material-symbols-outlined">payments</span><a href="record-cashSale.html">Record Sale (Cash)</a></div>
+<div class="nav-item active"><span class="material-symbols-outlined">credit_card</span><a class="active" href="record-creditSale.html">Record Sale (Credit)</a></div>
+
+<div class="nav-section">Records</div>
+<div class="nav-item"><span class="material-symbols-outlined">history</span><a href="transactionHistory.html">Transaction History</a></div>
+<div class="nav-item"><span class="material-symbols-outlined">group</span><a href="customerList.html">Customer List</a></div>
+
+<div class="profile">
+<div class="avatar">MA</div>
+<div>
+<strong>Michael A.</strong><br>
+<small>Sales Agent</small>
+</div>
+<div class="sidebar-footer">
+<div class="nav-link-logout"><a href=""><span class="material-symbols-outlined">logout</span></a></div>
+</div>
+</div>
+</div>
+
+<!-- Main -->
+<div class="main">
+<div class="container">
+
+<div class="breadcrumb">
+  Sales <span class="material-symbols-outlined" style="font-size:16px;">chevron_right</span>
+  <strong>Record Credit Sale</strong>
+</div>
+
+<div class="page-title">Record Credit Sale</div>
+<div class="subtitle">Fill in the details below to log a new credit-based transaction.</div>
+
+<form>
+
+<!-- Section 1 -->
+<div class="section">
+  <div class="section-header">
+    <span class="material-symbols-outlined">person_search</span>
+    Section 1: Buyer Information
+  </div>
+  <div class="section-body">
+    <div class="grid">
+
+      <div>
+        <label>Buyer Name</label>
+        <div class="field"><input type="text" placeholder="Enter full legal name"></div>
+      </div>
+
+      <div>
+        <label>NIN (National ID Number)</label>
+        <div class="field"><input type="text" placeholder="14-digit NIN"></div>
+      </div>
+
+      <div>
+        <label>Location</label>
+        <div class="field"><input type="text" placeholder="City / District / Region"></div>
+      </div>
+
+      <div>
+        <label>Contact Information</label>
+        <div class="field"><input type="text" placeholder="Phone or Email"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Section 2 -->
+<div class="section">
+  <div class="section-header">
+    <span class="material-symbols-outlined">inventory</span>
+    Section 2: Sale Details
+  </div>
+  <div class="section-body">
+    <div class="grid">
+
+      <div>
+        <label>Produce Name / Type</label>
+        <div class="field">
+          <select>
+            <option>Select produce...</option>
+            <option>White Maize</option>
+            <option>Soya Beans</option>
+            <option>Arabica Coffee</option>
+            <option>Robusta Coffee</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label>Tonnage (kg)</label>
+        <div class="field"><input type="number" placeholder="0.00"></div>
+      </div>
+
+      <div>
+        <label>Amount Due</label>
+        <div class="field">
+          <input type="text" class="credit" placeholder="Enter amount">
+        </div>
+        <div class="small-note">Credit field: Accuracy is critical for auditing.</div>
+      </div>
+
+      <div>
+        <label>Dispatch Date</label>
+        <div class="field"><input type="date"></div>
+      </div>
+
+      <div>
+        <label>Due Date (Payment Deadline)</label>
+        <div class="field">
+          <input type="date" class="credit">
+        </div>
+        <div class="small-note">Automatic alerts will be sent on this date.</div>
+      </div>
+
+      <div>
+        <label>Sales Agent Name</label>
+        <div class="field">
+          <input type="text" >
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="actions">
+  <button type="button" class="btn btn-cancel">Cancel</button>
+  <button type="submit" class="btn btn-primary">Record Credit Sale</button>
+</div>
+
+</form>
+
+<footer>
+© 2026 Karibu Groceries Limited. All internal sales records are confidential.
+</footer>
+
+</div>
+</div>
+
+</div>
+
+<script src="../js/auth.js"></script>
+<script src="../js/recordCashSale.js"></script>
+</body>
+</html>

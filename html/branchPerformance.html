@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Director Portal - Karibu Groceries</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/branchPerformancs.css">
+
+<link rel="stylesheet" href="../css/toast.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="../images/img3.jpg" alt="logo">
+    <h2>Karibu Groceries</h2>
+  </div>
+  <div class="header-actions">
+    <div class=""><span class="material-symbols-outlined"></span><a href="director-dashboard.html">Dashboard</a></div>
+    <div class=""><span class="material-symbols-outlined"></span><a href="finacial.html">Financial</a></div>
+    <div class=""><span class="material-symbols-outlined"></span><a class="active" href="branchPerformance.html">Branches</a></div>
+    <div class=""><span class="material-symbols-outlined"></span><a href="directorReports.html">Reports</a></div>
+    
+  </div>
+</header>
+
+<div class="container">
+
+<div class="title-row">
+  <div>
+    <div class="title-left">
+      <span class="material-symbols-outlined" style="color:#11d432;font-size:32px;">dashboard</span>
+      <h1>Branches Performance</h1>
+    </div>
+    <p>Overview of active operations and revenue analytics for the current quarter.</p>
+  </div>
+  <div class="date-filter">
+    <span class="material-symbols-outlined">calendar_today</span>
+    January 2026 - February 2026
+  </div>
+</div>
+
+<!-- CARDS -->
+<div class="grid-4">
+  <div class="card">
+    <div class="card-top">
+      <span>Top Performing Branch</span>
+      <span class="material-symbols-outlined">trending_up</span>
+    </div>
+    <h3>Nairobi CBD</h3>
+    <div class="positive">▲ 12.5% vs last month</div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <span>Total Branches Active</span>
+      <span class="material-symbols-outlined">storefront</span>
+    </div>
+    <h3>42</h3>
+    <div class="positive">+2 new this quarter</div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <span>Monthly Revenue</span>
+      <span class="material-symbols-outlined">payments</span>
+    </div>
+    <h3>KES 8.4M</h3>
+    <div class="positive">▲ 4.2% increase</div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <span>Avg Order Value</span>
+      <span class="material-symbols-outlined">shopping_cart</span>
+    </div>
+    <h3>KES 2,150</h3>
+    <div class="muted">Stable performance</div>
+  </div>
+</div>
+
+<!-- CHART + DONUT -->
+<div class="grid-main">
+  <div class="chart-card">
+    <div class="chart-header">
+      <h3>Monthly Revenue Comparison</h3>
+      <div class="legend">
+        <span><div class="dot nairobi"></div>Nairobi</span>
+        <span><div class="dot mombasa"></div>Mombasa</span>
+        <span><div class="dot kisumu"></div>Kisumu</span>
+      </div>
+    </div>
+
+    <div class="chart-area">
+      <div class="month oct">
+        <div class="bar-group">
+          <div class="bar nairobi"></div>
+          <div class="bar mombasa"></div>
+          <div class="bar kisumu"></div>
+        </div>
+        <span>Oct</span>
+      </div>
+
+      <div class="month nov">
+        <div class="bar-group">
+          <div class="bar nairobi"></div>
+          <div class="bar mombasa"></div>
+          <div class="bar kisumu"></div>
+        </div>
+        <span>Nov</span>
+      </div>
+
+      <div class="month dec">
+        <div class="bar-group">
+          <div class="bar nairobi"></div>
+          <div class="bar mombasa"></div>
+          <div class="bar kisumu"></div>
+        </div>
+        <span>Dec</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="donut-card">
+    <h3>Regional Distribution</h3>
+    <div class="donut">
+      <div class="donut-center">
+        <h2>72%</h2>
+        <small>Urban Markets</small>
+      </div>
+    </div>
+    <div class="progress">
+      <div style="display:flex;justify-content:space-between;">
+        <span>Tier 1 Cities</span>
+        <strong>28 Branches</strong>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TABLE -->
+<div class="table-card">
+  <div class="table-header">
+    <h3>Active Branches Directory</h3>
+    <span style="color:#11d432;font-weight:600;cursor:pointer;">View All →</span>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Branch Name</th>
+        <th>Region</th>
+        <th>Status</th>
+        <th>Monthly Revenue</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Nairobi CBD (Main)</strong></td>
+        <td>Central</td>
+        <td><span class="status operational">Operational</span></td>
+        <td><strong>KES 2,450,000</strong></td>
+        <td><span class="material-symbols-outlined">more_vert</span></td>
+      </tr>
+      <tr>
+        <td><strong>Mombasa Portway</strong></td>
+        <td>Coast</td>
+        <td><span class="status operational">Operational</span></td>
+        <td><strong>KES 1,820,000</strong></td>
+        <td><span class="material-symbols-outlined">more_vert</span></td>
+      </tr>
+      <tr>
+        <td><strong>Kisumu Lakeview</strong></td>
+        <td>Western</td>
+        <td><span class="status maintenance">Maintenance</span></td>
+        <td><strong>KES 1,150,000</strong></td>
+        <td><span class="material-symbols-outlined">more_vert</span></td>
+      </tr>
+      <tr>
+        <td><strong>Eldoret Hub</strong></td>
+        <td>Rift Valley</td>
+        <td><span class="status operational">Operational</span></td>
+        <td><strong>KES 980,000</strong></td>
+        <td><span class="material-symbols-outlined">more_vert</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+
+<footer>
+  <div>© 2026 Karibu Groceries Director Portal. All rights reserved.</div>
+  <div>Privacy Policy • System Status • Contact Support</div>
+</footer>
+
+
+    <script src="../js/branchPerformance.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>

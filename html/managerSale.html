@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Karibu Groceries Limited - New Sales Record</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/managerSales.css">
+
+  <link rel="stylesheet" href="../css/sidebar.css">
+
+
+</head>
+
+<body data-role="Manager">
+
+<div class="wrapper">
+
+<!-- SIDEBAR -->
+<div id="sidebar-container"></div>
+
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<div class="header">
+
+<div>
+<h2>Record Sales</h2>
+<p>Process customer purchase</p>
+</div>
+
+<div class="header-actions">
+
+<div class="notification">
+<span class="material-symbols-outlined">notifications</span>
+<div class="notification-dot"></div>
+</div>
+
+</div>
+</div>
+
+
+<div class="content">
+
+    <div class="sale-type">
+<label>Sale Type Selector</label>
+<div class="switch">
+<button id="regularBtn" class="active">Regular Sale</button>
+<button id="creditBtn">Credit Sale</button>
+</div>
+</div>
+
+<form id="salesForm">
+
+<section>
+<div class="section-header">
+<span class="material-symbols-outlined" style="color:#11d432;">inventory_2</span>
+<h2>Common Sale Details</h2>
+</div>
+
+<div class="grid grid-3">
+<div class="field">
+  <label>Produce Name</label>
+  <select id="product">
+    <option value="">Select Produce</option>
+  </select>
+  <p class="error" id="productError"></p>
+</div>
+<div class="field">
+  <label>Produce Type</label>
+  <select id="produceType">
+    <option value="">Select Type</option>
+    <option value="Cereals">Cereals</option>
+    <option value="Legumes">Legumes</option>
+  </select>
+  <p class="error" id="produceTypeError"></p>
+</div>
+<div class="field">
+  <label>Tonnage (kg)</label>
+  <input type="number" id="tonnage">
+  <p class="error" id="tonnageError"></p>
+</div>
+<div class="field">
+  <label>Buyer Name</label>
+  <input type="text" id="buyerName">
+  <p class="error" id="buyerNameError"></p>
+</div>
+<div class="field">
+  <label>Date & Time</label>
+  <input type="datetime-local" id="date">
+  <p class="error" id="dateError"></p>
+</div>
+<div class="field">
+  <label>Sales Agents Name</label>
+  <input type="text"  id="salesAgentName">
+  <p class="error" id="salesAgentNameError"></p>
+</div>
+<div class="field">
+  <label>Branch</label>
+  <select  id="branch">
+    <option value="">Select Branch</option>
+    <option value="Maganjo">Maganjo</option>
+    <option value="Matugga">Matugga</option>
+  </select>
+  <p class="error" id="branchError"></p>
+</div>
+</div>
+</section>
+
+<section id="regularSection">
+<div class="section-header">
+<span class="material-symbols-outlined" style="color:#11d432;">payments</span>
+<h2>Payment Details</h2>
+</div>
+
+<div class="payment-regular grid grid-2">
+<div class="field"><label>Amount Paid (UGX)</label><input type="number" id="cashamountPaid">
+<p class="error" id="cashamountPaidError"></p>
+</div>
+<div class="field">
+  <label>Payment Method</label>
+  <select id="paymentMethod">
+    <option value="">Select Payment Method</option>
+    <option value="Cash">Cash</option>
+    <option value="Mobile Money">Mobile Money</option>
+  </select>
+  <p class="error" id="paymentMethodError"></p>
+</div>
+</div>
+</section>
+
+<section id="creditSection" style="display:none;">
+<div class="section-header">
+<span class="material-symbols-outlined" style="color:#f59e0b;">credit_score</span>
+<h2>Credit Details</h2>
+</div>
+
+<div class="payment-credit grid grid-3">
+<div class="field"><label>Amount Due (UGX)</label><input type="text" id="amountDue">
+<p class="error" id="amountDueError"></p>
+</div>
+<div class="field"><label>Buyer NIN</label><input type="text" id="nationalId">
+<p class="error" id="nationalIDError"></p>
+</div>
+<div class="field"><label>Buyer Location</label><input type="text" id="location">
+<p class="error" id="locationError"></p>
+</div>
+<div class="field"><label>Buyer Contact</label><input type="text" id="contacts">
+<p class="error" id="contactError"></p>
+</div>
+<div class="field"><label>Dispatch Date</label><input type="date" id="dispatchDate">
+<p class="error" id="dispatchDateError"></p>
+</div>
+<div class="field"><label>Due Date</label><input type="date" id="dueDate">
+<p class="error" id="dueDateError"></p>
+</div>
+<div class="field"><label>Total Amount</label><input type="number" id="totalAmount">
+<p class="error" id="totalAmountError"></p>
+</div>
+<div class="field"><label>Amount Paid</label><input type="number" id="creditamountPaid">
+<p class="error" id="creditamountPaidError"></p>
+</div>
+<div class="field">
+  <label>Payment Status</label>
+  <select id="paymentStatus">
+    <option value="">Select Payment Status</option>
+    <option value="Unpaid">Unpaid</option>
+    <option value="Partial">Partial</option>
+    <option value="Paid">Paid</option>
+  </select>
+  <p class="error" id="paymentStatusError"></p>
+</div>
+</div>
+</section>
+
+<div class="actions">
+<button class="btn-cancel">Cancel</button>
+<button class="btn-primary" type="submit" id="submitBtn">Save Sale Record</button>
+</div>
+
+</form>
+
+
+
+</div>
+
+<div class="info">
+<span class="material-symbols-outlined" style="color:#2563eb;">info</span>
+<div>
+<p><strong>Need help?</strong></p>
+<p>Ensure all mandatory fields marked with weights and amounts are accurate before saving. Credit sales require buyer NIN for compliance.</p>
+</div>
+</div>
+
+</div>
+</main>
+
+
+
+<!-- <footer>
+<div>© 2026 Karibu Groceries Limited </div>
+<div>Terms • Support • Privacy Policy</div>
+</footer> -->
+
+<!-- Toast container -->
+<div id="toast-container" class="toast-container"></div>
+
+<script>
+const regularBtn=document.getElementById("regularBtn");
+const creditBtn=document.getElementById("creditBtn");
+const regularSection=document.getElementById("regularSection");
+const creditSection=document.getElementById("creditSection");
+
+regularBtn.onclick=function(){
+  regularBtn.classList.add("active");
+  creditBtn.classList.remove("active");
+  regularSection.style.display="block";
+  creditSection.style.display="none";
+};
+
+creditBtn.onclick=function(){
+  creditBtn.classList.add("active");
+  regularBtn.classList.remove("active");
+  regularSection.style.display="none";
+  creditSection.style.display="block";
+};
+</script>
+
+
+<script src="../js/auth.js"></script>
+
+<script src="../js/sidebar.js"></script>
+
+<script type="module" src="../js/managerSale.js"></script>
+
+
+
+
+</body>
+</html>

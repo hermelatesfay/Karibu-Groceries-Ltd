@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Produce Procurement Form - Karibu Groceries</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/procurement.css">
+
+  <link rel="stylesheet" href="../css/sidebar.css">
+
+</head>
+
+<body data-role="Manager">
+
+<div class="wrapper">
+
+<!-- SIDEBAR -->
+<div id="sidebar-container"></div>
+
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<div class="header">
+
+<div>
+<h2>Record Procurement</h2>
+<p>Add newly procured stock</p>
+</div>
+
+<div class="header-actions">
+
+<div class="notification">
+<span class="material-symbols-outlined">notifications</span>
+<div class="notification-dot"></div>
+</div>
+
+</div>
+</div>
+
+
+<div class="content">
+
+    <form class="form-card" id="procurementForm">
+
+    <!-- SECTION 1 -->
+    <div class="section">
+      <div class="section-header">
+        <span class="material-symbols-outlined">agriculture</span>
+        Produce Details
+      </div>
+
+      <div class="section-body grid-3">
+
+        <label>
+          Produce Name
+          <select id="product">
+            <option value="">Select Produce</option>
+          </select>
+          <p class="error" id="productError"></p>
+        </label>
+
+        <label>
+          Produce Type
+          <select id="produceType">
+            <option value="">Select Type</option>
+            <option value="Cereals">Cereals</option>
+            <option value="Legumes">Legumes</option>
+          </select>
+          <p class="error" id="produceTypeError"></p>
+        </label>
+
+        <label>
+          Tonnage (kg)
+          <div class="unit-group">
+            <input type="number" placeholder="e.g. 5000" id="tonnage">
+            <span>KG</span>
+          </div>
+          <p class="error" id="tonnageError"></p>
+        </label>
+
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section">
+      <div class="section-header">
+        <span class="material-symbols-outlined">payments</span>
+        Financials
+      </div>
+
+      <div class="section-body grid-2">
+
+        <label>
+          Total Cost (Buying Price)
+          <div class="unit-group">
+            <!-- <span class="material-symbols-outlined"></span> -->
+            <input type="number" placeholder="0.00" id="cost">
+            <span>UGX</span>
+          </div>
+          <p class="error" id="costError"></p>
+        </label>
+
+        
+
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <div class="section-header">
+        <span class="material-symbols-outlined">local_shipping</span>
+        Supplier & Logistics
+      </div>
+
+      <div class="section-body grid-2">
+
+        <label>
+          Dealer Name
+          <input type="text" placeholder="Enter dealer name" id="dealerName">
+          <p class="error" id="dealerNameError"></p>
+        </label>
+
+        <label>
+          Contact Information
+          <div class="input-icon">
+            <span class="material-symbols-outlined">call</span>
+            <input type="tel" placeholder="+256 700 000000" id="contact">
+          </div>
+          <p class="error" id="contactError"></p>
+        </label>
+
+        <label>
+          Branch
+          <select id="branch">
+            <option value="">Select Branch</option>
+            <option value="Maganjo">Maganjo</option>
+            <option value="Matugga">Matugga</option>
+           
+          </select>
+          <p class="error" id="branchError"></p>
+        </label>
+
+        <label>
+          Date & Time of Arrival
+          <input type="datetime-local" id="dateAndTime">
+          <p class="error" id="dateAndTimeError"></p>
+        </label>
+
+      </div>
+    </div>
+
+    <!-- ACTIONS -->
+    <div class="form-actions">
+      <button type="button" class="cancel-btn">Cancel</button>
+      <button type="submit" class="submit-btn" id="submitBtn">
+        <span class="material-symbols-outlined">check_circle</span>
+        Submit Procurement
+      </button>
+    </div>
+
+  </form>
+
+</div>
+
+<!-- Toast container -->
+<div id="toast-container" class="toast-container"></div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- <div id="pageLoader" class="page-loader">
+  <div class="spinner"></div>
+</div> -->
+
+<script src="../js/auth.js"></script>
+<script src="../js/sidebar.js"></script>
+<script type="module" src="../js/procurement.js"></script>
+
+
+
+</body>
+</html>

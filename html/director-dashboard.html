@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Executive Dashboard</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+<link rel="stylesheet" href="../css/director-dashboard.css">
+
+<link rel="stylesheet" href="../css/toast.css">
+</head>
+
+<body data-role="Director">
+
+<div class="layout">
+
+<!-- Sidebar -->
+<aside class="sidebar">
+
+  <div class="logo">
+    <div class="logo-box">
+      <span class="material-symbols-outlined"><img src="../images/img3.jpg" alt="logo"></span>
+    </div>
+    <strong>Karibu Groceries</strong>
+  </div>
+
+  <div class="nav">
+    <a class="active" href="director-dashboard.html">
+      <span class="material-symbols-outlined">dashboard</span>
+      Dashboard
+    </a>
+    <a href="finacial.html">
+      <span class="material-symbols-outlined">account_balance</span>
+      Financials
+    </a>
+    <a href="branchPerformance.html">
+      <span class="material-symbols-outlined">storefront</span>
+      Branches
+    </a>
+    <a href="directorReports.html">
+      <span class="material-symbols-outlined">description</span>
+      Reports
+    </a>
+  </div>
+
+  <div class="profile">
+    <img src="../images/img4.avif">
+    <div>
+      <strong>John Doe</strong><br>
+      <small style="color:var(--muted)">Managing Director</small>
+    </div>
+    <div class="sidebar-footer">
+      <div class="nav-link-logout" id="logoutBtn"><a href=""><span class="material-symbols-outlined">logout</span></a></div>
+    </div>
+  </div>
+
+</aside>
+
+<!-- Main -->
+<main class="main">
+
+<div class="header">
+  <div>
+    <h2>Director's Overview</h2>
+    <p>Real-time performance across all operations.</p>
+  </div>
+
+  <div class="header-buttons">
+    <button class="btn">
+      <span class="material-symbols-outlined">calendar_today</span>
+      Last 30 Days
+    </button>
+    <button class="btn btn-primary">
+      <span class="material-symbols-outlined">download</span>
+      Export Report
+    </button>
+  </div>
+</div>
+
+<div class="kpis">
+  <div class="card">
+    <p>Total Revenue</p>
+    <h3 id="totalRevenue">0</h3>
+    <div class="trend">
+      <span class="material-symbols-outlined">trending_up</span>
+      +12.5%
+    </div>
+  </div>
+
+  <div class="card">
+    <p>Net Sales</p>
+    <h3 id="netSales">0</h3>
+    <div class="trend">
+      <span class="material-symbols-outlined">trending_up</span>
+      +8.2%
+    </div>
+  </div>
+
+  <div class="card">
+    <p>Credit Issued</p>
+    <h3 id="creditIssued">0</h3>
+    <div class="trend">
+      <span class="material-symbols-outlined">trending_down</span>
+      -2.4%
+    </div>
+  </div>
+
+  <div class="card">
+    <p>Gross Profit</p>
+    <h3 id="grossProfit">0</h3>
+    <div class="trend">
+      <span class="material-symbols-outlined">trending_up</span>
+      +15.3%
+    </div>
+  </div>
+</div>
+
+<div class="grid">
+
+<div class="progress-card">
+  <h3>Top Performing Branches</h3>
+
+  <div class="progress-item">
+    <div class="progress-top">
+      <span>Downtown HQ</span>
+      <span>85%</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width:85%"></div>
+    </div>
+  </div>
+
+  <div class="progress-item">
+    <div class="progress-top">
+      <span>Westside Hub</span>
+      <span>70%</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width:70%"></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="alert-card">
+  <h3>Critical Alerts</h3>
+
+  <div class="alert red">
+    <span class="material-symbols-outlined">warning</span>
+    Inventory shortage reported
+  </div>
+
+  <div class="alert amber">
+    <span class="material-symbols-outlined">error</span>
+    Credit limit nearing threshold
+  </div>
+
+  <div class="alert green">
+    <span class="material-symbols-outlined">check_circle</span>
+    Monthly report generated
+  </div>
+
+  <div class="alert-footer">
+    <button>
+      <span class="material-symbols-outlined">notifications</span>
+      View All Alerts
+    </button>
+  </div>
+</div>
+
+</div>
+
+<div class="table-card">
+  <div class="table-header">
+    <h3>Branch Performance Details</h3>
+    <input type="text" placeholder="Filter branches...">
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Branch</th>
+        <th>Status</th>
+        <th>Revenue</th>
+        <th>Transactions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Downtown HQ</td>
+        <td><span class="status green">Optimal</span></td>
+        <td>$1,240,000</td>
+        <td>12,402</td>
+      </tr>
+      <tr>
+        <td>Westside Hub</td>
+        <td><span class="status amber">Restocking</span></td>
+        <td>$980,500</td>
+        <td>8,112</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</main>
+</div>
+
+
+<script src="../js/auth.js"></script>
+
+<script src="../js/directorDashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karibu Groceries - Sales Agent Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/transactionHistory.css">
+
+<link rel="stylesheet" href="../css/toast.css">
+</head>
+<body>
+
+<!-- <header>
+<div class="logo">
+<div class="logo-box">
+<span class="material-symbols-outlined">shopping_basket</span>
+</div>
+<h2>Karibu Groceries</h2>
+</div>
+
+<div class="search">
+<span class="material-symbols-outlined">search</span>
+<input type="text" placeholder="Search customer or ID...">
+</div>
+
+<div class="header-right">
+<span class="material-symbols-outlined">notifications</span>
+<span class="material-symbols-outlined">settings</span>
+<div class="profile">
+<div>
+<div style="font-weight:600;font-size:13px;">John Doe</div>
+<div style="font-size:11px;color:#64748b;">Sales Agent</div>
+</div>
+<img src="https://i.pravatar.cc/100">
+</div>
+</div>
+</header> -->
+
+<div class="main">
+
+<div class="sidebar">
+<div class="brand">
+<div class="logo"><img src="../images/img3.jpg" alt="logo"></div>
+<div>
+<h1>Karibu Groceries</h1>
+<p>Sales Agent Portal</p>
+</div>
+</div>
+
+<div class="nav-item "><span class="material-symbols-outlined">dashboard</span><a  href="salesAgent-dashboard.html">Dashboard</a></div>
+
+<div class="nav-section">Sales Operations</div>
+<div class="nav-item"><span class="material-symbols-outlined">payments</span><a href="record-cashSale.html">Record Sale (Cash)</a></div>
+<div class="nav-item"><span class="material-symbols-outlined">credit_card</span><a href="record-creditSale.html">Record Sale (Credit)</a></div>
+
+<div class="nav-section">Records</div>
+<div class="nav-item active"><span class="material-symbols-outlined">history</span><a class="active" href="transactionHistory.html">Transaction History</a></div>
+<div class="nav-item"><span class="material-symbols-outlined">group</span><a  href="customerList.html">Customer List</a></div>
+
+<div class="profile">
+<div class="avatar">MA</div>
+<div>
+<strong>Michael A.</strong><br>
+<small>Sales Agent</small>
+</div>
+<div class="sidebar-footer">
+<div class="nav-link-logout"><a href=""><span class="material-symbols-outlined">logout</span></a></div>
+</div>
+</div>
+</div>
+
+
+<div class="content">
+
+<div class="page-header">
+<div>
+<h1>Transaction History</h1>
+<p style="color:#64748b;font-size:14px;">Review and manage your daily grocery sales.</p>
+</div>
+<div class="buttons">
+<button class="btn btn-outline">
+<span class="material-symbols-outlined">download</span>Export CSV
+</button>
+<button class="btn btn-primary">
+<span class="material-symbols-outlined">add</span>New Sale
+</button>
+</div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+<div class="card">
+<h4>Total Sales Today</h4>
+<div class="big">KES 45,200</div>
+<div class="trend">
+<span class="material-symbols-outlined" style="font-size:16px;">arrow_upward</span>
++12.5% from yesterday
+</div>
+</div>
+
+<div class="card">
+<h4>Daily Volume</h4>
+<div class="big">128</div>
+<div class="trend">
+<span class="material-symbols-outlined" style="font-size:16px;">arrow_upward</span>
++5% more items
+</div>
+</div>
+
+<div class="card">
+<h4>Pending Credits</h4>
+<div class="big">KES 12,400</div>
+<div class="trend" style="color:#f59e0b;">
+<span class="material-symbols-outlined" style="font-size:16px;">schedule</span>
+8 unpaid invoices
+</div>
+</div>
+</div>
+
+<!-- TABLE -->
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Date & Time</th>
+<th>Transaction ID</th>
+<th>Customer</th>
+<th>Item Summary</th>
+<th>Type</th>
+<th class="amount">Amount</th>
+<th>Status</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Oct 24, 2023 · 14:30</td>
+<td class="mono">#KG-88291</td>
+<td>Esther Mwangi</td>
+<td>2x Milk, 1x Bread, 3kg Rice</td>
+<td><div class="type cash"><span class="material-symbols-outlined">payments</span>Cash</div></td>
+<td class="amount">KES 1,250.00</td>
+<td><span class="badge completed">Completed</span></td>
+<td class="action"><span class="material-symbols-outlined">more_vert</span></td>
+</tr>
+
+<tr>
+<td>Oct 24, 2023 · 14:15</td>
+<td class="mono">#KG-88289</td>
+<td>Kamau Njuguna</td>
+<td>Bulk Cooking Oil (5L)</td>
+<td><div class="type credit"><span class="material-symbols-outlined">credit_card</span>Credit</div></td>
+<td class="amount">KES 3,800.00</td>
+<td><span class="badge pending">Pending</span></td>
+<td class="action"><span class="material-symbols-outlined">more_vert</span></td>
+</tr>
+
+<tr>
+<td>Oct 24, 2023 · 13:50</td>
+<td class="mono">#KG-88285</td>
+<td>Sarah Odhiambo</td>
+<td>Fresh Vegetables Pack</td>
+<td><div class="type cash"><span class="material-symbols-outlined">payments</span>Cash</div></td>
+<td class="amount">KES 850.00</td>
+<td><span class="badge completed">Completed</span></td>
+<td class="action"><span class="material-symbols-outlined">more_vert</span></td>
+</tr>
+
+<tr>
+<td>Oct 24, 2023 · 13:20</td>
+<td class="mono">#KG-88280</td>
+<td>David Muli</td>
+<td>12x Eggs, 2kg Sugar</td>
+<td><div class="type cash"><span class="material-symbols-outlined">payments</span>Cash</div></td>
+<td class="amount">KES 1,120.00</td>
+<td><span class="badge completed">Completed</span></td>
+<td class="action"><span class="material-symbols-outlined">more_vert</span></td>
+</tr>
+
+<tr>
+<td>Oct 24, 2023 · 12:45</td>
+<td class="mono">#KG-88275</td>
+<td>Grace Wanjiru</td>
+<td>Maize Flour (10kg)</td>
+<td><div class="type credit"><span class="material-symbols-outlined">credit_card</span>Credit</div></td>
+<td class="amount">KES 2,400.00</td>
+<td><span class="badge completed">Completed</span></td>
+<td class="action"><span class="material-symbols-outlined">more_vert</span></td>
+</tr>
+
+<tr>
+<td>Oct 24, 2023 · 11:30</td>
+<td class="mono">#KG-88270</td>
+<td>Peter Kariuki</td>
+<td>Assorted Spices, Tea Leaves</td>
+<td><div class="type cash"><span class="material-symbols-outlined">payments</span>Cash</div></td>
+<td class="amount">KES 450.00</td>
+<td><span class="badge refunded">Refunded</span></td>
+<td class="action"><span class="material-symbols-outlined">more_vert</span></td>
+</tr>
+
+</tbody>
+</table>
+
+<div class="pagination">
+<div class="page-btn">
+<span class="material-symbols-outlined">chevron_left</span>
+Previous
+</div>
+
+<div class="pages">
+<div class="page active">1</div>
+<div class="page">2</div>
+<div class="page">3</div>
+</div>
+
+<div class="page-btn">
+Next
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<script src="../js/auth.js"></script>
+<script src="../js/transactionHistory.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karibu Groceries - Financials</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/financial.css">
+
+<link rel="stylesheet" href="../css/toast.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-box">
+      <span class="material-symbols-outlined"><img src="../images/img3.jpg" alt="logo"></span>
+    </div>
+    <div>
+      <strong>Karibu Groceries</strong><br>
+      <small style="color:#64748b;">Director Portal</small>
+    </div>
+  </div>
+
+  <div class="nav">
+    <button><span class="material-symbols-outlined"></span><a href="director-dashboard.html">Dashboard</a></button>
+    <button><span class="material-symbols-outlined"></span><a href="branchPerformance.html">Branches</a></button>
+    <button class="active"><span class="material-symbols-outlined"></span><a href="finacial.html">Financials</a></button>
+    <button ><span class="material-symbols-outlined"></span><a href="directorReports.html">Reports</a></button>
+  </div>
+</header>
+
+<div class="container">
+
+<div class="page-header">
+  <div>
+    <h1>Financial Overview</h1>
+    <p>Real-time performance metrics and revenue tracking.</p>
+  </div>
+  <div style="display:flex; gap:10px;">
+    <button class="btn"><span class="material-symbols-outlined">calendar_today</span>Last 30 Days</button>
+    <button class="btn primary"><span class="material-symbols-outlined">download</span>Export Report</button>
+  </div>
+</div>
+
+<!-- KPI CARDS -->
+<div class="grid-3">
+  <div class="card">
+    <div class="card-top">
+      <span>Total Revenue</span>
+      <div class="icon-box"><span class="material-symbols-outlined">trending_up</span></div>
+    </div>
+    <h2 id="revenueCard">0</h2>
+    <div><span class="positive">+12.5%</span> <span style="color:#94a3b8;">from last month</span></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <span>Net Profit</span>
+      <div class="icon-box"><span class="material-symbols-outlined">account_balance_wallet</span></div>
+    </div>
+    <h2 id="profitCard">0</h2>
+    <div><span class="positive">+8.2%</span> <span style="color:#94a3b8;">from last month</span></div>
+  </div>
+
+  <div class="card">
+    <div class="card-top">
+      <span>Outstanding Credit</span>
+      <div class="icon-box" style="background:#fee2e2; color:#ef4444;">
+        <span class="material-symbols-outlined">error_outline</span>
+      </div>
+    </div>
+    <h2 id="creditCard">0</h2>
+    <div><span class="negative">-3.1%</span> <span style="color:#94a3b8;">collections pending</span></div>
+  </div>
+</div>
+
+<!-- CHART + SIDE -->
+<div class="grid-2-1">
+
+  <div class="chart">
+    <strong>Monthly Profit Trends</strong>
+    <div class="bars">
+      <div class="bar" style="height:40%;"></div>
+      <div class="bar" style="height:55%;"></div>
+      <div class="bar" style="height:45%;"></div>
+      <div class="bar" style="height:70%;"></div>
+      <div class="bar" style="height:65%;"></div>
+      <div class="bar" style="height:85%;"></div>
+      <div class="bar highlight" style="height:95%;"></div>
+    </div>
+  </div>
+
+  <div>
+    <div class="side-card">
+      <strong>Cash on Hand</strong>
+      <h2>$84,320.50</h2>
+      <small style="color:#94a3b8;">Available across all accounts</small>
+    </div>
+
+    <div class="side-card">
+      <strong>Operating Margin</strong>
+      <h2>26.2%</h2>
+      <small style="color:#94a3b8;">Target: 25.0%</small>
+    </div>
+  </div>
+
+</div>
+
+<!-- TABLE -->
+<div class="table-card">
+  <div class="table-header">
+    <strong>Recent High-Value Transactions</strong>
+    <span style="color:#11d432; font-weight:600; cursor:pointer;">View All</span>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Transaction ID</th>
+        <th>Supplier / Customer</th>
+        <th>Status</th>
+        <th>Date</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>#TRX-8291</td>
+        <td>Green Fresh Farms</td>
+        <td><span class="status completed">Completed</span></td>
+        <td>Oct 24, 2023</td>
+        <td>$12,450.00</td>
+      </tr>
+      <tr>
+        <td>#TRX-8288</td>
+        <td>Whole Market Co.</td>
+        <td><span class="status completed">Completed</span></td>
+        <td>Oct 23, 2023</td>
+        <td>$8,900.25</td>
+      </tr>
+      <tr>
+        <td>#TRX-8285</td>
+        <td>Dairy Solutions Inc.</td>
+        <td><span class="status pending">Pending</span></td>
+        <td>Oct 22, 2023</td>
+        <td>$15,200.00</td>
+      </tr>
+      <tr>
+        <td>#TRX-8279</td>
+        <td>Blueberry Fields</td>
+        <td><span class="status completed">Completed</span></td>
+        <td>Oct 21, 2023</td>
+        <td>$4,120.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+</body>
+</html>

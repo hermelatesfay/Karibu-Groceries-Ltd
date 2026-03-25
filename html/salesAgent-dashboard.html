@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karibu Groceries - Sales Agent Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/salesAgent-dashboard.css">
+
+<link rel="stylesheet" href="../css/toast.css">
+</head>
+<body data-role="Sales agent">
+
+<div class="dashboard">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+<div class="brand">
+<div class="logo"><img src="../images/img3.jpg" alt="logo"></div>
+<div>
+<h1>Karibu Groceries</h1>
+<p>Sales Agent Portal</p>
+</div>
+</div>
+
+<div class="nav-item active"><span class="material-symbols-outlined">dashboard</span><a class="active" href="salesAgent-dashboard.html">Dashboard</a></div>
+
+<div class="nav-section">Sales Operations</div>
+<div class="nav-item"><span class="material-symbols-outlined">payments</span><a href="record-cashSale.html">Record Sale (Cash)</a></div>
+<div class="nav-item"><span class="material-symbols-outlined">credit_card</span><a href="record-creditSale.html">Record Sale (Credit)</a></div>
+
+<div class="nav-section">Records</div>
+<div class="nav-item"><span class="material-symbols-outlined">history</span><a href="transactionHistory.html">Transaction History</a></div>
+<div class="nav-item"><span class="material-symbols-outlined">group</span><a href="customerList.html">Customer List</a></div>
+
+<div class="profile">
+<div class="avatar">MA</div>
+<div>
+<strong>Michael A.</strong><br>
+<small>Sales Agent</small>
+</div>
+<div class="sidebar-footer">
+<div class="nav-link-logout" id="logoutBtn"><a href=""><span class="material-symbols-outlined">logout</span></a></div>
+</div>
+</div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<div class="header">
+<div>
+<h2>Welcome back, Agent Michael</h2>
+<p>Tuesday, October 24th • Ready for a productive day.</p>
+</div>
+<div class="outlet">
+<span class="material-symbols-outlined">store</span>
+Outlet: Downtown Branch
+</div>
+</div>
+
+<div class="stats">
+<div class="card">
+<div class="card-header">
+<div class="icon-box green"><span class="material-symbols-outlined">attach_money</span></div>
+<h4>Today's Total Sales</h4>
+</div>
+<h3>$1,250.00</h3>
+<div class="trend"><span class="material-symbols-outlined">trending_up</span>+12% from yesterday</div>
+</div>
+
+<div class="card">
+<div class="card-header">
+<div class="icon-box orange"><span class="material-symbols-outlined">pending_actions</span></div>
+<h4>Pending Credit</h4>
+</div>
+<h3>$420.00</h3>
+<p style="font-size:12px;color:#ff8c00;margin-top:6px;">3 invoices due this week</p>
+</div>
+
+<div class="card">
+<div class="card-header">
+<div class="icon-box blue"><span class="material-symbols-outlined">leaderboard</span></div>
+<h4>Top Selling Product</h4>
+</div>
+<h3>Grain Maize</h3>
+<p style="font-size:12px;color:#618968;margin-top:6px;">450kg sold today</p>
+</div>
+</div>
+
+<div class="section-title">Quick Actions</div>
+
+<div class="quick-grid">
+<div class="action">
+<div>
+<h5>New Cash Sale</h5>
+<p>Record a standard produce sale with immediate payment.</p>
+</div>
+<button class="btn btn-green"><a href="record-cashSale.html">Record Cash Sale</a></button>
+</div>
+
+<div class="action">
+<div>
+<h5>New Credit Sale</h5>
+<p>Create an invoice for a trusted customer account.</p>
+</div>
+<button class="btn btn-green"><a href="record-creditSale.html">Record Credit Sale</a></button>
+</div>
+</div>
+
+<div class="bottom">
+
+<div>
+<div class="table-header">
+<h3 style="font-size:18px;font-weight:700;">Recent Transactions</h3>
+<a href="transactionHistory.html">View All</a>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Customer</th>
+<th>Item</th>
+<th class="text-right">Qty (kg)</th>
+<th class="text-right">Total</th>
+<th class="text-center">Status</th>
+</tr>
+</thead>
+<tbody id="recentTransactions tbody">
+<tr>
+<td>10:45 AM</td>
+<td>Mama Sarah</td>
+<td>Grain Maize</td>
+<td class="text-right">50</td>
+<td class="text-right">$150.00</td>
+<td class="text-center"><span class="badge badge-green">Cash</span></td>
+</tr>
+<tr>
+<td>10:15 AM</td>
+<td>John's Hotel</td>
+<td>Beans (Rosecoco)</td>
+<td class="text-right">100</td>
+<td class="text-right">$420.00</td>
+<td class="text-center"><span class="badge badge-orange">Credit</span></td>
+</tr>
+<tr>
+<td>09:30 AM</td>
+<td>Walk-in</td>
+<td>Soybeans</td>
+<td class="text-right">25</td>
+<td class="text-right">$85.00</td>
+<td class="text-center"><span class="badge badge-green">Cash</span></td>
+</tr>
+<tr>
+<td>09:12 AM</td>
+<td>City Bakery</td>
+<td>G-nuts</td>
+<td class="text-right">10</td>
+<td class="text-right">$65.00</td>
+<td class="text-center"><span class="badge badge-green">Cash</span></td>
+</tr>
+<tr>
+<td>08:50 AM</td>
+<td>Peter K.</td>
+<td>Cow peas</td>
+<td class="text-right">200</td>
+<td class="text-right">$560.00</td>
+<td class="text-center"><span class="badge badge-green">Cash</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="stock">
+<h3 style="font-size:18px;font-weight:700;margin-bottom:15px;">Stock Levels</h3>
+
+<div class="stock-item">
+<div class="stock-top"><span>Grain Maize</span><span>1,200kg</span></div>
+<div class="progress"><div class="bar green" style="width:75%"></div></div>
+</div>
+
+<div class="stock-item">
+<div class="stock-top"><span>Beans (Rosecoco)</span><span>340kg</span></div>
+<div class="progress"><div class="bar orange" style="width:30%"></div></div>
+</div>
+
+<div class="stock-item">
+<div class="stock-top"><span>Soybeans</span><span>850kg</span></div>
+<div class="progress"><div class="bar green" style="width:60%"></div></div>
+</div>
+
+<div class="stock-item">
+<div class="stock-top"><span>Cow peas</span><span>420kg</span></div>
+<div class="progress"><div class="bar green" style="width:45%"></div></div>
+</div>
+
+<div class="stock-item">
+<div class="stock-top"><span>G-nuts</span><span class="low">80kg (Low)</span></div>
+<div class="progress"><div class="bar red" style="width:10%"></div></div>
+</div>
+
+<button class="inventory-btn">View Full Inventory</button>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<script src="../js/auth.js"></script>
+
+<script type="module" src="../js/salesAgent-dashboard.js"></script>
+
+</body>
+</html>
